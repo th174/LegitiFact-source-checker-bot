@@ -1,4 +1,4 @@
-package com.example.th174.hack_duke2016;
+package com.example.just_sudo_it.hack_duke2016;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
