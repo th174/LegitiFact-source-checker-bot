@@ -22,6 +22,7 @@ my %sourcepages;
 $sourcepages{"Opposing Views"} = ${$fb->query->find("/${$fb->fetch('/opposingviews')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 $sourcepages{"Occupy Democrats"} = ${$fb->query->find("/${$fb->fetch('/OccupyDemocrats')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 $sourcepages{"Huffington Post"} = ${$fb->query->find("/${$fb->fetch('/HuffingtonPost')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
+<<<<<<< HEAD
 $sourcepages{"Wall Street Journal"} = ${$fb->query->find("/${$fb->fetch('/wsj')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 $sourcepages{"Upworthy"} = ${$fb->query->find("/${$fb->fetch('/Upworthy')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 $sourcepages{"TYT"} = ${$fb->query->find("/${$fb->fetch('/TheYoungTurks')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
@@ -54,6 +55,10 @@ $sourcepages{"American News"} = ${$fb->query->find("/${$fb->fetch('/ThePatriotRe
 $sourcepages{"Conservative Daily"} = ${$fb->query->find("/${$fb->fetch('/Conservative-Daily-189885532970')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 
 
+=======
+$sourcepages{"Wall Street Journal"} = ${$fb->query->find("/${$fb->fetch('/wsj/')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
+$sourcepages{"The Independent"} = ${$fb->query->find("/${$fb->fetch('/TheIndependentOnline')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
+>>>>>>> df1eae6003dc11e681b24929fa6df5fdf89af89b
 
 
 foreach my $source (keys %sourcepages){
