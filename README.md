@@ -1,1 +1,1 @@
-# HackDuke_F16
+# LegitiFact Source Checker Bot
