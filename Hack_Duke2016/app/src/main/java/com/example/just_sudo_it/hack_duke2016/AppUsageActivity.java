@@ -31,7 +31,6 @@ import java.util.List;
 
 public class AppUsageActivity extends AppCompatActivity {
 
-    UsageStatsManager mUsageStatsManager = new UsageStatsManager();
 
     /** first app user */
     public static final int AID_APP = 10000;
