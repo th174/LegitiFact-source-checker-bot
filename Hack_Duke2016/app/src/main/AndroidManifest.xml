@@ -25,6 +25,13 @@
         </activity>
         <activity
             android:name=".LoginActivity"
+            android:label="@string/title_activity_login"></activity>
+
+        <activity
+            android:name=".AppUsageActivity"></activity>
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
             android:label="@string/title_activity_login" />
         <activity
             android:name=".sideMenu"
