@@ -23,6 +23,8 @@ $sourcepages{"Opposing Views"} = ${$fb->query->find("/${$fb->fetch('/opposingvie
 $sourcepages{"Occupy Democrats"} = ${$fb->query->find("/${$fb->fetch('/OccupyDemocrats')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 $sourcepages{"Huffington Post"} = ${$fb->query->find("/${$fb->fetch('/HuffingtonPost')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
 $sourcepages{"Wall Street Journal"} = ${$fb->query->find("/${$fb->fetch('/wsj/')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
+$sourcepages{"The Independent"} = ${$fb->query->find("/${$fb->fetch('/TheIndependentOnline')}{id}/feed")->select_fields(qw(id name link message created_time))->where_since("-$time hour")->request->as_hashref}{data};
+
 
 foreach my $source (keys %sourcepages){
     print "\n$source\n-----------------------------\n";
