@@ -77,7 +77,7 @@ my %websites;
 
 while(<$research>){
     if($_ =~ /^(Known)?\t(.+)\t(http(s)?:\/\/)?(www\.)?(.*\.(com|org|co.uk).+?)\t(Left|Right|Unbiased|Far Left|Far Right)\t(more distrusted than trusted|more trusted than distrusted|about equally trusted and distrusted)/){
-        print $_,"\n";
+#         print $_,"\n";
         $websites{$6} = {
             url => $6,
             popularity => $1,
@@ -104,13 +104,13 @@ foreach my $source (keys %sourcepages){
                 $message = $message."(Over 40% of respondents) ";
             }
             if ($websites{$4}{bias} =~ /Left|Right/){
-                $message = $message."Additionally, data from Pew Research has indicated that evaluations of this source's credibility varies among readers from different political views. ";
+                $message = $message."\nAdditionally, the research indicates that evaluations of this source's credibility varies among readers from different political views. ";
             } elsif($websites{$4}{bias}=~/Far Left/){
-                $message = $message."Additionally, data from Pew Research has indicated that left-leaning readers were much more likely to find this source credible than other readers. ";
+                $message = $message."\nAdditionally, the research indicates that left-leaning readers were much more likely to find this source credible than other readers. ";
             } elsif($websites{$4}{bias}=~/Far Right/){
-                $message = $message."Additionally, data from Pew Research has indicated that right-leaning readers were much more likely to find this source credible than other readers. ";
+                $message = $message."\nAdditionally, the research indicates that right-leaning readers were much more likely to find this source credible than other readers. ";
             }
-            $message = $message."To learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link. https://goo.gl/xwVtjv";
+            $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
             $fb->add_page_feed->set_page_id(${$page}{id})->set_message($message)->set_link_uri("$curr")->publish;
         }
     }
