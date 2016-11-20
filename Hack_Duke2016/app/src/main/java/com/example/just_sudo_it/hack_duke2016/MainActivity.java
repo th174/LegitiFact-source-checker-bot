@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-        Button viewPerHourButton = (Button) findViewById(R.id.view_per_hour_button);
+        Button viewPerHourButton = (Button) findViewById(R.id.history_button);
         viewPerHourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, HistoryActivity.class));
