@@ -92,6 +92,10 @@ $sourcepages{"Reuters"} = ${$fb->query->find("/${$fb->fetch('/Reuters')}{id}/pos
 $sourcepages{"CNBC"} = ${$fb->query->find("/${$fb->fetch('/cnbc')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"NPR"} = ${$fb->query->find("/${$fb->fetch('/npr')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"NPR Politics"} = ${$fb->query->find("/${$fb->fetch('/nprpolitics')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"CBC News"} = ${$fb->query->find("/${$fb->fetch('/cbcnews')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"The Onion"} = ${$fb->query->find("/${$fb->fetch('/theonion')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"Wikileaks"} = ${$fb->query->find("/${$fb->fetch('/wikileaks')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"Al Jazeera"} = ${$fb->query->find("/${$fb->fetch('/aljazeera')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 
 
 
@@ -127,12 +131,12 @@ foreach my $source (keys %sourcepages){
                 if ($websites{$domain}{popularity}){
                     $message = $message."(Over 40% of respondents) ";
                 }
-                if ($websites{$domain}{bias} =~ /Left|Right/){
-                    $message = $message."\nAdditionally, the research indicates that evaluations of this source's credibility varies among readers with different political views. ";
-                } elsif($websites{$domain}{bias}=~/Far Left/){
-                    $message = $message."\nAdditionally, the research indicates that left-leaning readers were much more likely to find this source credible than other readers. ";
-                } elsif($websites{$domain}{bias}=~/Far Right/){
-                    $message = $message."\nAdditionally, the research indicates that right-leaning readers were much more likely to find this source credible than other readers. ";
+                if ($websites{$domain}{bias} =~ /Unbiased/){
+                    $message = $message."\nAdditionally, the research indicates that left-leaning readers and right-leaning readers were about equally as likely to find this source credible. ";
+                } elsif($websites{$domain}{bias}=~/Left/){
+                    $message = $message."\nAdditionally, the research indicates that left-leaning readers were more likely to find this source credible than other readers. ";
+                } elsif($websites{$domain}{bias}=~/Right/){
+                    $message = $message."\nAdditionally, the research indicates that right-leaning readers were more likely to find this source credible than other readers. ";
                 }
                 $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
                 print Dumper $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish;
