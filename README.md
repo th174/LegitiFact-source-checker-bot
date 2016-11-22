@@ -25,9 +25,14 @@ This script is written in perl, taking advantage of the Facebook::Graph API to i
 ##Authors
 
 Timmy Huang 
+
 github.com/th174
+
 th174@duke.edu
 
+
 Delia Li
+
 github.com/delia-li
+
 dl202@duke.edu
