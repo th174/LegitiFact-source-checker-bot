@@ -19,6 +19,8 @@ $fb->access_token($access_token);
 $fb->authorize->extend_permissions(qw(publish_stream read_stream));
 my $page = $fb->fetch('/legitifact');
 
+print Dumper $fb->query->find("/legitifact")->request;
+
 my %sourcepages; #perlhash of Facebook page -> feed from last $time min
 my $time = $ARGV[0]; #minutes
 
@@ -98,16 +100,17 @@ $sourcepages{"CBC News"} = ${$fb->query->find("/${$fb->fetch('/cbcnews')}{id}/po
 $sourcepages{"The Onion"} = ${$fb->query->find("/${$fb->fetch('/theonion')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"Wikileaks"} = ${$fb->query->find("/${$fb->fetch('/wikileaks')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"Al Jazeera"} = ${$fb->query->find("/${$fb->fetch('/aljazeera')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"The New Yorker"} = ${$fb->query->find("/${$fb->fetch('/newyorker')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 
 
 
 #load info froms tsv file
 my $path = dirname(abs_path($0));
-open(my $research, "< $path/news-sites-research.txt") or die("could not open datafile $path/../news-sites-research.txt");
+open(my $research, "< $path/news-sites-research.tsv") or die("could not open datafile $path/../news-sites-research.tsv");
 my %websites;
 
 while(<$research>){
-    if($_ =~ /^(Known)?\t(.+)\t(http(s)?:\/\/)?(www\.)?(.+?)(\/.*)?\t(Left|Right|Unbiased|Far Left|Far Right)\t(more distrusted than trusted|more trusted than distrusted|about equally trusted and distrusted)$/){
+    if($_ =~ /^(Known)?\t(.+)\t(http(s)?:\/\/)?(www\.)?(.+?)(\/.*)?\t(Left|Right|Unbiased|Far Left|Far Right)\t(more distrusted than trusted|more trusted than distrusted|about equally trusted and distrusted)\t([0-9]+)\t([0-9]+)\t([0-9]+)\t([0-9]+)$/){
         #         print $_,"\n";
         $websites{$6} = {
             url => $6,
@@ -115,6 +118,10 @@ while(<$research>){
             source_name => $2,
             bias => $8,
             credibility => $9,
+            trusted => $10,
+            distrusted => $11,
+            neither => $12,
+            unheard => $13,
         };
     }
 }
@@ -141,6 +148,7 @@ foreach my $source (keys %sourcepages){
                 } elsif($websites{$domain}{bias}=~/Right/){
                     $message = $message."\nAdditionally, the research indicates that right-leaning readers were more likely to find this source credible than other readers. ";
                 }
+                $message = $message."\nOut of the ${100-$websites{$domain}{unheard}}% of respondents who have heard of $websites{$domain}{source_name},\n$websites{$domain}{trusted}\ttrusted the news source,\n$websites{$domain}{distrusted}\tdistrusted the news source, and\n$websites{$domain}{unheard}\tneither trusted nor distrusted the news source.";
                 $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
                 print Dumper $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish;
             }
