@@ -5,6 +5,8 @@ use warnings;
 use URI;
 use Facebook::Graph;
 use Data::Dumper;
+use Cwd 'abs_path';
+use File::Basename;
 
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
 
@@ -100,7 +102,8 @@ $sourcepages{"Al Jazeera"} = ${$fb->query->find("/${$fb->fetch('/aljazeera')}{id
 
 
 #load info froms tsv file
-open(my $research, "< /home/th174/Documents/Legitifact-source-checker-bot/news-sites-research.txt") or die("could not open datafile");
+my $path = dirname(abs_path($0));
+open(my $research, "< $path/news-sites-research.txt") or die("could not open datafile $path/../news-sites-research.txt");
 my %websites;
 
 while(<$research>){
