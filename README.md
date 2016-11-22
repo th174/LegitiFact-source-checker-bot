@@ -1,5 +1,5 @@
 # LegitiFact Source Checker Bot
-Visit the bot in action on the [Legitifact Facebook Page](https://www.facebook.com/legitifact/).
+Visit the bot in action on the [Legitifact Facebook Page](https://www.facebook.com/legitifact/)! Make sure to like the page to see it on your feed!
 
 # Usage
     perl ./run-source-checker [time]
