@@ -1,5 +1,5 @@
 # LegitiFact Source Checker Bot
-Visit the bot in action on the [Legitifact Facebook Page](https://www.facebook.com/legitifact/)
+Visit the bot in action on the [Legitifact Facebook Page](https://www.facebook.com/legitifact/).
 
 # Usage
     perl ./run-source-checker [time]
@@ -22,13 +22,13 @@ Second, our bot presents a succinct but informative evaluation of each source li
 # Build Details
 This script is written in perl, taking advantage of the Facebook::Graph API to interface with Facebook Pages. The API is used to query and retrieve public posts made by major public Facebook pages. Recently created posts that contain links are extracted and compared with our existing database of news source evaluations from the Pew Research Center. These posts are then shared as new posts on the Legitifact public page, along with a brief summary evaluation of the source. By sharing the same post as the original source, we take advantage of Facebook's News Feed algorithm to guarantee that our post containing the evaluation is consolidated together with the original, so that users will be able to view our automated post at the same time as the original.
 
-##Authors
+## Contact Authors
 
-    Timmy Huang 
-    github.com/th174
-    th174@duke.edu
+Timmy Huang  
+github.com/th174  
+th174@duke.edu  
 
 
-    Delia Li
-    github.com/delia-li
-    dl202@duke.edu
+Delia Li  
+github.com/delia-li  
+dl202@duke.edu  
