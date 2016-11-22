@@ -1,5 +1,5 @@
 # LegitiFact Source Checker Bot
-Visit the bot in action at https://www.facebook.com/legitifact/
+Visit the bot in action on the [Legitifact Facebook Page](https://www.facebook.com/legitifact/)
 
 # Usage
     perl ./run-source-checker [time]
@@ -24,15 +24,11 @@ This script is written in perl, taking advantage of the Facebook::Graph API to i
 
 ##Authors
 
-Timmy Huang 
-
-github.com/th174
-
-th174@duke.edu
+    Timmy Huang 
+    github.com/th174
+    th174@duke.edu
 
 
-Delia Li
-
-github.com/delia-li
-
-dl202@duke.edu
+    Delia Li
+    github.com/delia-li
+    dl202@duke.edu
