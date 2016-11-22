@@ -1,0 +1,306 @@
+***********************************************************************************
+Started at 20:41:39 on 10/21/2016
+***********************************************************************************
+Querying souces from the past 2 minutes....
+
+The New York Times
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/nytimesscience/videos/1217259505020740/',
+          'name' => 'The New York Times - Science',
+          'id' => '5281959998_10150977898159999',
+          'created_time' => '2016-11-22T01:40:16+0000',
+          'message' => "The Goffin\x{2019}s cockatoo is a smart bird, so smart it has been compared to a 3-year-old human. http://nyti.ms/2gc6JHa"
+        };
+
+Slate.com
+-----------------------------
+
+The Economist
+-----------------------------
+
+TheBlaze
+-----------------------------
+
+NPR Politics
+-----------------------------
+
+the Business Insider
+-----------------------------
+
+The Ed Schultz Show
+-----------------------------
+
+NPR
+-----------------------------
+
+PBS
+-----------------------------
+
+CNBC
+-----------------------------
+
+PBS News Hour
+-----------------------------
+
+Yahoo News
+-----------------------------
+$VAR1 = {
+          'name' => 'The history of the Victoria\'s Secret Fashion Show',
+          'id' => '338028696036_1352377621463032',
+          'created_time' => '2016-11-22T01:40:00+0000',
+          'message' => 'Fun fact: Victoria\'s Secret wasn\'t actually founded by a woman named Victoria. It was founded by a guy named Roy.',
+          'link' => 'https://www.facebook.com/yahoonews/videos/1352377621463032/'
+        };
+
+CBS News
+-----------------------------
+
+Rush Limbaugh
+-----------------------------
+
+The Wall Street Journal
+-----------------------------
+$VAR1 = {
+          'link' => 'http://on.wsj.com/2fjpxQz',
+          'caption' => 'wsj.com',
+          'id' => '8304333127_10154976590463128',
+          'created_time' => '2016-11-22T01:40:10+0000',
+          'message' => 'Dallas police and firefighters are withdrawing hundreds of millions from their retirement plan following a series of investment blunders, heightening the risk that a major U.S. pension fund could run out of money.',
+          'name' => 'Dallas Police and Fire Pension Fund Beset by Withdrawals'
+        };
+
+Domain: wsj.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_msg' => 'OK',
+                                        '_request' => bless( {
+                                                               '_headers' => bless( {
+                                                                                      'content-length' => 702,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => 'access_token=EAAFvSiB8iKsBAMXhySQ4Ctk4TExWkoKua7HdZA421uxXsOHkrs2ZAmiygOcnrtJrd8enVGwSPqN2xzw6NphZC3217EPfX4idea0xjG0JYjIiomhJ7MMCQl077H67PPbOVPMfFBA2AByAau5lFS7IdUh6KZAkbEfhgoSvdDhjqEXCYMqIMO7K&message=The+Facebook+page+of+The+Wall+Street+Journal+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+Wall+Street+Journal+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fon.wsj.com%2F2fjpxQz&published=true',
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'}
+                                                             }, 'HTTP::Request' ),
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_rc' => '200',
+                                        '_headers' => bless( {
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'x-fb-debug' => 'jHuXJQPEtunSzBJDSkmA+k+JI7CG44Hsz1kkpcsV3uchFcmRZ3Md56TQDrOIL+4gJLsw03dN9P4EA7kS4SR/Cg==',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'x-fb-trace-id' => 'CZeUMC6flXY',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-peer' => '31.13.69.197:443',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'x-page-usage' => 'X-Page-Usage',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject'
+                                                                               },
+                                                               'date' => 'Tue, 22 Nov 2016 01:42:08 GMT',
+                                                               'client-date' => 'Tue, 22 Nov 2016 01:42:08 GMT',
+                                                               'x-page-usage' => '{"call_count":43,"total_cputime":6,"total_time":4}',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-response-num' => 1,
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-rev' => '2697075',
+                                                               'connection' => 'close',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'content-length' => '42',
+                                                               'pragma' => 'no-cache'
+                                                             }, 'HTTP::Headers' ),
+                                        '_content' => '{"id":"1622501708043673_1623220851305092"}'
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+CNNMoney
+-----------------------------
+
+MSNBC
+-----------------------------
+
+Upworthy
+-----------------------------
+
+Opposing Views
+-----------------------------
+
+ThinkProgress
+-----------------------------
+
+CNN
+-----------------------------
+
+Fox News
+-----------------------------
+
+NowThis
+-----------------------------
+
+Sean Hannity
+-----------------------------
+
+BuzzFeed
+-----------------------------
+
+HuffPost Women
+-----------------------------
+
+Reuters
+-----------------------------
+
+the Drudge Report
+-----------------------------
+
+MSN
+-----------------------------
+
+Right Wing News
+-----------------------------
+
+The Verge
+-----------------------------
+
+POLITICO
+-----------------------------
+
+USA TODAY
+-----------------------------
+
+ABC News
+-----------------------------
+
+Bloomberg Politics
+-----------------------------
+
+the AP
+-----------------------------
+
+Washington Post
+-----------------------------
+
+Bloomberg
+-----------------------------
+
+Mic
+-----------------------------
+
+HuffPost Politics
+-----------------------------
+
+ATTN:
+-----------------------------
+
+The Young Turks
+-----------------------------
+
+Occupy Democrats
+-----------------------------
+
+Newsweek
+-----------------------------
+
+Breaking News
+-----------------------------
+
+TIME
+-----------------------------
+
+The Atlantic
+-----------------------------
+
+CNN Politics
+-----------------------------
+
+ABC News Politics
+-----------------------------
+
+Daily Kos
+-----------------------------
+
+BBC News
+-----------------------------
+
+Daily Caller
+-----------------------------
+
+VICE News
+-----------------------------
+
+Mother Jones
+-----------------------------
+
+New York Magazine
+-----------------------------
+
+American News
+-----------------------------
+
+the Today Show
+-----------------------------
+
+The Other 98%
+-----------------------------
+
+The Huffington Post
+-----------------------------
+
+The Guardian
+-----------------------------
+
+The Daily Show
+-----------------------------
+
+VICE
+-----------------------------
+$VAR1 = {
+          'message' => 'Trump told reporters that Mattis was "the real deal." after meeting with him on Saturday.',
+          'created_time' => '2016-11-22T01:40:03+0000',
+          'id' => '167115176655082_1455868614446392',
+          'name' => 'Trump Says Marine General James \'Mad Dog\' Mattis Could Be Defense Secretary',
+          'link' => 'http://www.vice.com/read/trump-is-eyeing-james-mattis-for-secretary-of-defense-vgtrn?utm_source=vicefbus',
+          'caption' => 'www.vice.com'
+        };
+
+Domain: vice.com
+
+the American Center for Law and Justice
+-----------------------------
+
+NBC News
+-----------------------------
+
+AJ+
+-----------------------------
+
+The Independent
+-----------------------------
+
+Glenn Beck
+-----------------------------
+
+CNN International
+-----------------------------
+
+
+
+
+
