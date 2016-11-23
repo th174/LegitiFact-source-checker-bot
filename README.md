@@ -32,3 +32,6 @@ th174@duke.edu
 Delia Li  
 github.com/delia-li  
 dl202@duke.edu  
+
+-------------------------------
+This project was originally conceived as a submission to HackDuke 2016.
