@@ -18,9 +18,6 @@ my $fb = Facebook::Graph->new;
 $fb->access_token($access_token);
 $fb->authorize->extend_permissions(qw(publish_stream read_stream));
 my $page = $fb->fetch('/legitifact');
-
-print Dumper $fb->query->find("/legitifact")->request;
-
 my %sourcepages; #perlhash of Facebook page -> feed from last $time min
 my $time = $ARGV[0]; #minutes
 
