@@ -13,7 +13,7 @@ my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
 printf ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year+1900);
 
 #Authenticate with Facebook
-my $access_token = 'EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD';
+my $access_token = 'EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD';
 my $fb = Facebook::Graph->new;
 $fb->access_token($access_token);
 $fb->authorize->extend_permissions(qw(publish_stream read_stream));
