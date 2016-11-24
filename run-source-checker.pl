@@ -132,7 +132,7 @@ foreach my $source (keys %sourcepages){
         my $url = ${$_}{link};
         my $caption = ${$_}{caption};
         print Dumper $_;
-        if ($caption && $caption =~ /^(http(s)?:\/\/)?(www\.)?(.*\.)?(.+\.(co.uk|go\.com|com|org|eu|net|co))$/){
+        if ($caption && $caption =~ /^(http(s)?:\/\/)?(www\.)?(.*\.)?(.+\.(co.uk|com|org|eu|net|co))$/){
             my $domain = $5;
             print "\nDomain: $domain\n";
             if ($domain =~ /politi.co/ || $domain =~ /politico/){
