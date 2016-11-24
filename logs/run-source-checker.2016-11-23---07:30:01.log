@@ -1,0 +1,1410 @@
+***********************************************************************************
+Started at 07:30:01 on 10/23/2016
+***********************************************************************************
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"name":"LegitiFact News Evaluator","id":"1622501708043673"}',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'x-fb-debug' => '+c9EnOFQ/OrgUNh84ParPdBbJNd+39PxwYewwpWLkcXioPvWEmft/ofgfRmxIxwrwgiwBheYRVwHvtHhqGifwg==',
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'etag' => '"bba90fe818f89625f3cc38c546d52c3518339e7b"',
+                                                               'content-length' => '60',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               '::std_case' => {
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:01 GMT',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'x-fb-trace-id' => 'C/nzmw8/GfL',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:01 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close'
+                                                             }, 'HTTP::Headers' ),
+                                        '_request' => bless( {
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2//legitifact?access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'},
+                                                               '_method' => 'GET',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => ''
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200'
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+Querying souces from the past 15 minutes....
+
+NPR Politics
+-----------------------------
+
+The Verge
+-----------------------------
+
+ABC News Politics
+-----------------------------
+
+CNNMoney
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:21:00+0000',
+          'link' => 'http://cnnmon.ie/1zUEnlX',
+          'name' => 'How the super-rich spend their millions',
+          'message' => 'If you were a billionaire, what would you buy? See how much you end up spending, and which super rich celebrity your spending habits are most like. http://cnnmon.ie/2g2eCML',
+          'caption' => 'money.cnn.com',
+          'id' => '6651543066_10154119354563067'
+        };
+
+Domain: cnn.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'},
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1001
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+CNNMoney+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+CNN+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+95%25+of+respondents+who+have+heard+of+CNN%2C%0D%0A57%25%09trusted+the+news+source%2C%0D%0A22%25%09distrusted+the+news+source%2C+and%0D%0A22%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fcnnmon.ie%2F1zUEnlX&published=true'
+                                                             }, 'HTTP::Request' ),
+                                        '_msg' => 'OK',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688051258372"}',
+                                        '_headers' => bless( {
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'x-fb-trace-id' => 'DBdbdl88i+j',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:54 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'x-fb-debug' => 'K2ehqWNc3NpnQA53jNVSPPTsDEYkCQatlhum4fpAE/Ax4FY2me9FChacs24II+RVIV1+eTEDK93GJgDVfkJ+WA==',
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'content-length' => '42',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:54 GMT',
+                                                               '::std_case' => {
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+the Today Show
+-----------------------------
+$VAR1 = {
+          'message' => 'She almost deleted all of her social media accounts. Instead, she shared a positive message.',
+          'caption' => 'today.com',
+          'id' => '12566691349_10154759084281350',
+          'name' => 'After bullies mocked her birthmark, this woman became a force for kindness',
+          'link' => 'http://www.today.com/series/love-your-body/crystal-hodges-woman-port-wine-stain-birthmark-shares-her-story-t105230',
+          'created_time' => '2016-11-23T12:30:00+0000'
+        };
+
+Domain: today.com
+
+POLITICO
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:28:01+0000',
+          'name' => 'Inside Wednesday\'s Playbook: Dept. of Intrigue',
+          'link' => 'http://politi.co/2fontqh',
+          'id' => '62317591679_10154025200616680',
+          'caption' => 'politi.co',
+          'message' => 'The meeting of the week.'
+        };
+
+Domain: politi.co
+
+Alias: politico.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+POLITICO+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+POLITICO+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+32%25+of+respondents+who+have+heard+of+POLITICO%2C%0D%0A21%25%09trusted+the+news+source%2C%0D%0A16%25%09distrusted+the+news+source%2C+and%0D%0A63%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fpoliti.co%2F2fontqh&published=true',
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-length' => 983,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'}
+                                                             }, 'HTTP::Request' ),
+                                        '_headers' => bless( {
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:56 GMT',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-date' => 'Client-Date'
+                                                                               },
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'x-fb-debug' => 'VxQwTddLwbkxCYDimheWevsZ1HKSHXxSOvDQeB8rXA282CHlIeE3GSNIQi4O/RBFheme7MkomG/dbN9/nGQIfg==',
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:56 GMT',
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2700879',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-trace-id' => 'AxAKix6D4nf',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL'
+                                                             }, 'HTTP::Headers' ),
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688064591704"}',
+                                        '_msg' => 'OK'
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+HuffPost Politics
+-----------------------------
+
+The Young Turks
+-----------------------------
+
+Mother Jones
+-----------------------------
+
+Mic
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:21:00+0000',
+          'link' => 'https://www.facebook.com/thefutureisnowbymic/videos/1039628979480467/',
+          'name' => 'The Future Is Now',
+          'id' => '174742062548592_1296557613700359',
+          'message' => 'This tiny device controls all your on/off switches, so you never have to get out of bed this winter.
+
+#InnovateMice'
+        };
+
+The New York Times
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.nytimes.com/2016/11/22/us/politics/trump-tower.html?smid=fb-nytimes&smtyp=cur',
+          'name' => "At Donald Trump\x{2019}s Properties, a Showcase for a Brand and a President-Elect",
+          'message' => 'Questions are being raised about whether Donald J. Trump is exploiting the high profile of the presidency to conduct what could be seen as a promotional tour for the Trump Organization.',
+          'caption' => 'nytimes.com',
+          'id' => '5281959998_10150979495984999',
+          'created_time' => '2016-11-23T12:25:00+0000'
+        };
+
+Domain: nytimes.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688074591703"}',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:57 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-trace-id' => 'GfUDGRMRqac',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:57 GMT',
+                                                               '::std_case' => {
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev'
+                                                                               },
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'x-fb-debug' => 'FbLCJaY5GubOu+UiAHAoyUfYUWOlcyFast1f6nOLKglGVbmHLYzbWRt4LF/Q9Y/lGQjad52ohmnGZdviQk74lg=='
+                                                             }, 'HTTP::Headers' ),
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'},
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1123,
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+The+New+York+Times+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+New+York+Times+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+85%25+of+respondents+who+have+heard+of+The+New+York+Times%2C%0D%0A40%25%09trusted+the+news+source%2C%0D%0A19%25%09distrusted+the+news+source%2C+and%0D%0A41%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fwww.nytimes.com%2F2016%2F11%2F22%2Fus%2Fpolitics%2Ftrump-tower.html%3Fsmid%3Dfb-nytimes%26smtyp%3Dcur&published=true'
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+PBS
+-----------------------------
+$VAR1 = {
+          'message' => "At a conference over the weekend, alt-right ideologue Richard Spencer finished his speech, shouting \x{201c}Hail Trump! Hail our people! Hail victory!\x{201d} His audience responded with cheers and a smattering of Nazi salutes (From PBS NewsHour)",
+          'caption' => 'pbs.org',
+          'id' => '19013582168_10154188615292169',
+          'name' => 'Nazi salutes \'done in a spirit of irony and exuberance,\' alt-right leader says',
+          'link' => 'http://to.pbs.org/2glpcip',
+          'created_time' => '2016-11-23T12:28:18+0000'
+        };
+
+Domain: pbs.org
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+PBS+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+PBS+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+88%25+of+respondents+who+have+heard+of+PBS%2C%0D%0A43%25%09trusted+the+news+source%2C%0D%0A14%25%09distrusted+the+news+source%2C+and%0D%0A43%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fto.pbs.org%2F2glpcip&published=true',
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 997,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'}
+                                                             }, 'HTTP::Request' ),
+                                        '_content' => '{"id":"1622501708043673_1623688081258369"}',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'x-fb-debug' => 'jO4zebMGQMP018o4YUWLslsphbIG76ASupOzwBfV3gWO9oIvQs5zv47quVtG0qbaVcHAKMS1+HvjD3W5fWzVaA==',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               '::std_case' => {
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:57 GMT',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'content-length' => '42',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'x-fb-trace-id' => 'DHUVwHP/mci',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2700879',
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:57 GMT'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+The Economist
+-----------------------------
+$VAR1 = {
+          'name' => 'A Cambodian court upholds sentences for two tyrants',
+          'link' => 'http://econ.st/2gl8Ru0',
+          'message' => "Nuon Chea, 90, was the Khmer Rouge\x{2019}s chief ideologist and \x{201c}Brother Number Two\x{201d} to Pol Pot, who died (untried) in 1998. Khieu Samphan, 85, was the head of the totalitarian state that killed more than 2m Cambodians. Our report from 2003 before they were both sentenced to life for crimes against humanity",
+          'caption' => 'economist.com',
+          'id' => '6013004059_10154801369609060',
+          'created_time' => '2016-11-23T12:21:15+0000'
+        };
+
+Domain: economist.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_request' => bless( {
+                                                               '_headers' => bless( {
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1014,
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+The+Economist+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+Economist+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+and+right-leaning+readers+were+about+equally+as+likely+to+find+this+source+credible.+%0D%0A%0D%0AOut+of+the+34%25+of+respondents+who+have+heard+of+The+Economist%2C%0D%0A36%25%09trusted+the+news+source%2C%0D%0A6%25%09distrusted+the+news+source%2C+and%0D%0A58%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fecon.st%2F2gl8Ru0&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200',
+                                        '_content' => '{"id":"1622501708043673_1623688091258368"}',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'x-fb-debug' => 'UfcFNFbuNlP/KzZpx8++Kp9P0XUl6wZ/G4NsJynuZkKN5auoHo70STTuVOkzDoTVYaMksvZmeo6xqucwz1skoQ==',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               '::std_case' => {
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:58 GMT',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'content-length' => '42',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'x-fb-trace-id' => 'GdpSE5/nIUW',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:58 GMT'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+NPR
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.npr.org/2016/11/22/503052632/two-weeks-after-election-day-california-continues-counting-ballots?utm_source=facebook.com&utm_medium=social&utm_campaign=npr&utm_term=nprnews&utm_content=2050',
+          'name' => 'Hillary Clinton\'s Popular Vote Lead Is 1.7 Million And Growing. Here\'s Why',
+          'caption' => 'npr.org',
+          'message' => 'Why does it take California so long to count its mail-in votes? The problems seem to start at the breakfast table.',
+          'id' => '10643211755_10154994586801756',
+          'created_time' => '2016-11-23T12:30:00+0000'
+        };
+
+Domain: npr.org
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_request' => bless( {
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'},
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-length' => 1199,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+NPR+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+NPR+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+53%25+of+respondents+who+have+heard+of+NPR%2C%0D%0A55%25%09trusted+the+news+source%2C%0D%0A17%25%09distrusted+the+news+source%2C+and%0D%0A28%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fwww.npr.org%2F2016%2F11%2F22%2F503052632%2Ftwo-weeks-after-election-day-california-continues-counting-ballots%3Futm_source%3Dfacebook.com%26utm_medium%3Dsocial%26utm_campaign%3Dnpr%26utm_term%3Dnprnews%26utm_content%3D2050&published=true'
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200',
+                                        '_content' => '{"id":"1622501708043673_1623688104591700"}',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'date' => 'Wed, 23 Nov 2016 12:30:59 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-trace-id' => 'ConDR3vwlrT',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               '::std_case' => {
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:30:59 GMT',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-debug' => 'gphgca7IQ9GD4BFEC77W48tuI0u2ciw15WLOalc2Yva6VM8uknsvT064VbLo17anb8RWFNy25QsQxOlciJQArw=='
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+$VAR1 = {
+          'created_time' => '2016-11-23T12:18:51+0000',
+          'name' => 'Trump Chooses South Carolina Gov. Nikki Haley As U.N. Ambassador',
+          'link' => 'http://www.npr.org/sections/thetwo-way/2016/11/23/503115218/trump-chooses-south-carolina-gov-nikki-haley-as-u-n-ambassador?utm_source=facebook.com&utm_medium=social&utm_campaign=npr&utm_term=nprnews&utm_content=2050',
+          'id' => '10643211755_10154995235166756',
+          'caption' => 'npr.org',
+          'message' => 'Haley is the first woman and first minority to join Trump\'s team of top administration officials.'
+        };
+
+Domain: npr.org
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_content' => '{"id":"1622501708043673_1623688111258366"}',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'x-fb-debug' => 'SdBgZxrP1B/KKvwXApemk3fHc8DDDpJfosQnhhtPk4kAMKTnerNbaYk4SeY2p5ElWvyOJ4TpSjlSuQMA9VYdYg==',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:00 GMT',
+                                                               '::std_case' => {
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject'
+                                                                               },
+                                                               'x-fb-trace-id' => 'CbJrMZXgA6j',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:00 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8'
+                                                             }, 'HTTP::Headers' ),
+                                        '_request' => bless( {
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'},
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1219,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+NPR+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+NPR+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+53%25+of+respondents+who+have+heard+of+NPR%2C%0D%0A55%25%09trusted+the+news+source%2C%0D%0A17%25%09distrusted+the+news+source%2C+and%0D%0A28%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fwww.npr.org%2Fsections%2Fthetwo-way%2F2016%2F11%2F23%2F503115218%2Ftrump-chooses-south-carolina-gov-nikki-haley-as-u-n-ambassador%3Futm_source%3Dfacebook.com%26utm_medium%3Dsocial%26utm_campaign%3Dnpr%26utm_term%3Dnprnews%26utm_content%3D2050&published=true'
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200'
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+Rush Limbaugh
+-----------------------------
+
+MSNBC
+-----------------------------
+
+the Drudge Report
+-----------------------------
+
+The New Yorker
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:30:28+0000',
+          'caption' => 'newyorker.com',
+          'id' => '9258148868_10154213004218869',
+          'message' => 'Could deficit spending be the rare instance where Donald J. Trump\'s instincts might not wreak havoc?',
+          'name' => "Why Trump Should Spend Other People\x{2019}s Money",
+          'link' => 'http://nyer.cm/yqtvKSS'
+        };
+
+Domain: newyorker.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+The+New+Yorker+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+New+Yorker+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+65%25+of+respondents+who+have+heard+of+The+New+Yorker%2C%0D%0A22%25%09trusted+the+news+source%2C%0D%0A15%25%09distrusted+the+news+source%2C+and%0D%0A62%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fnyer.cm%2FyqtvKSS&published=true',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1027,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'}
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200',
+                                        '_msg' => 'OK',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688121258365"}',
+                                        '_headers' => bless( {
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'x-fb-debug' => 'LSXWozt8Xc3U0YjI6tzrJryxFUfPBAJUpjuEwgtI9TRS2IX61gquE8I30wM+mi7rcKcwsZLVIE7LQ1rBNuijeg==',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:00 GMT',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-date' => 'Client-Date'
+                                                                               },
+                                                               'content-length' => '42',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'x-fb-trace-id' => 'EVHNnIEJ5Fk',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:00 GMT',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+NowThis
+-----------------------------
+
+ATTN:
+-----------------------------
+
+CNN Politics
+-----------------------------
+
+CNN
+-----------------------------
+
+TIME
+-----------------------------
+
+CNN International
+-----------------------------
+
+Daily Caller
+-----------------------------
+
+The Independent
+-----------------------------
+$VAR1 = {
+          'name' => '15 cartoons that sum up the little moments you realise you\'re an adult',
+          'link' => 'https://www.indy100.com/article/cartoons-illustrations-100-days-of-being-an-adult-cristina-vanko-7432106',
+          'caption' => 'indy100.com',
+          'message' => 'You know you\'re an adult when...',
+          'id' => '13312631635_10154209325361636',
+          'created_time' => '2016-11-23T12:21:00+0000'
+        };
+
+Domain: indy100.com
+
+Right Wing News
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:30:00+0000',
+          'id' => '389658314427637_1605094822883974',
+          'caption' => 'rightwingnews.com',
+          'message' => 'Liberals intend to steal the presidency from Trump',
+          'name' => 'Six liberal electors have agreed not to give Trump the electoral votes he needs to be President',
+          'link' => 'http://rightwingnews.com/top-news/six-liberal-electors-agreed-not-give-trump-electoral-votes-needs-president/'
+        };
+
+Domain: rightwingnews.com
+
+ABC News
+-----------------------------
+$VAR1 = {
+          'message' => "North Carolina woman says granddaughter born with white streak in hair keeps family\x{2019}s 200-year heritage alive. \"It blew my mind.\" http://abcn.ws/2fn4JaE",
+          'id' => '86680728811_10155047292648812',
+          'name' => "Baby\x{2019}s White Streak in Hair Keeps Family's 200-Year Heritage A...",
+          'link' => 'https://www.facebook.com/ABCNews/videos/10155047292648812/',
+          'created_time' => '2016-11-23T12:28:44+0000'
+        };
+
+Occupy Democrats
+-----------------------------
+
+Yahoo News
+-----------------------------
+$VAR1 = {
+          'caption' => 'yahoo.com',
+          'id' => '338028696036_10154897548341037',
+          'message' => '"As we are learning this year in election after election, even if globalization might (boost) prosperity, it also creates inequality. It helps some people and it hurts others."',
+          'name' => 'Facebook\'s Zuckerberg urges post-Trump world not to \'disconnect\'',
+          'link' => 'https://yhoo.it/2fKQalc',
+          'created_time' => '2016-11-23T12:20:22+0000'
+        };
+
+Domain: yahoo.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+Yahoo+News+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Yahoo+News+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+80%25+of+respondents+who+have+heard+of+Yahoo+News%2C%0D%0A24%25%09trusted+the+news+source%2C%0D%0A20%25%09distrusted+the+news+source%2C+and%0D%0A56%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=https%3A%2F%2Fyhoo.it%2F2fKQalc&published=true',
+                                                               '_headers' => bless( {
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1016,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'}
+                                                             }, 'HTTP::Request' ),
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688134591697"}',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'x-fb-debug' => 'iIoQXz+Dy3U/nUrLynzqE8rvwHMfW0ZJafqUbraF2CY68J6o+sFgYDtmVeTRkg6MTwZby9gzdg1iIrKgMpA3Sw==',
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'content-length' => '42',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:02 GMT',
+                                                               '::std_case' => {
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-response-num' => 'Client-Response-Num'
+                                                                               },
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'x-fb-trace-id' => 'HM2ZHBx7vRR',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:02 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+Upworthy
+-----------------------------
+
+Newsweek
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:30:01+0000',
+          'caption' => 'europe.newsweek.com',
+          'id' => '18343191100_10154611835386101',
+          'message' => "Scorsese has been working to adapt Shusako Endo\x{2019}s 1966 novel of the same name for 28 years.",
+          'link' => 'http://europe.newsweek.com/watch-first-trailer-martin-scorseses-latest-epic-silence-524291',
+          'name' => 'Watch the first trailer for \'Silence,\' Martin Scorsese\'s latest sweeping epic'
+        };
+
+Domain: newsweek.com
+
+American News
+-----------------------------
+
+The Daily Show
+-----------------------------
+
+the American Center for Law and Justice
+-----------------------------
+
+Daily Kos
+-----------------------------
+
+New York Magazine
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:25:06+0000',
+          'message' => "\x{201c}Do you know who is on my naughty list? Hillary Clinton.\x{201d}",
+          'caption' => 'nymag.com',
+          'id' => '14516439825_10154774575359826',
+          'link' => 'http://nym.ag/2gAJVBH',
+          'name' => 'Mall Santa Claus Gets in Trouble for Putting Hillary on the Naughty List'
+        };
+
+Domain: nymag.com
+
+Al Jazeera
+-----------------------------
+
+The Huffington Post
+-----------------------------
+
+Slate.com
+-----------------------------
+
+Sean Hannity
+-----------------------------
+
+Reuters
+-----------------------------
+
+The Ed Schultz Show
+-----------------------------
+
+CBS News
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:27:30+0000',
+          'message' => 'More than 48 million Americans are expected to travel for the Thanksgiving holiday. Here are some travel tips that will make your journey a little easier.',
+          'caption' => 'www.cbsnews.com',
+          'id' => '131459315949_10154099056990950',
+          'link' => 'http://cbsn.ws/2fqSRHR',
+          'name' => 'Thanksgiving travel promises to be crowded'
+        };
+
+Domain: cbsnews.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_request' => bless( {
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'},
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+CBS+News+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+CBS+News+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+93%25+of+respondents+who+have+heard+of+CBS+News%2C%0D%0A49%25%09trusted+the+news+source%2C%0D%0A18%25%09distrusted+the+news+source%2C+and%0D%0A33%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fcbsn.ws%2F2fqSRHR&published=true',
+                                                               '_headers' => bless( {
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-length' => 1009,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST'
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688144591696"}',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               '::std_case' => {
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:03 GMT',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-debug' => '0p4xJy14AXG+N1NXYw0z6v+mdLnXwyfIGTNPLTiZuomMAIChEzi13EVitsX+JXDAvGQRrisLkP/+NbxaoPdCNQ==',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:03 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-trace-id' => 'DYoQ4bfSXMS',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+NBC News
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:18:00+0000',
+          'message' => 'Obama jokes to hide his emotion as he gifts Ellen DeGeneres with the Medal of Freedom',
+          'id' => '155869377766434_1580270278659663',
+          'name' => 'Obama Starts To Choke Up During Ellen\'s Medal Ceremony',
+          'link' => 'https://www.facebook.com/NBCNews/videos/1580270278659663/'
+        };
+
+The Atlantic
+-----------------------------
+
+TheBlaze
+-----------------------------
+
+the AP
+-----------------------------
+
+The Wall Street Journal
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:28:58+0000',
+          'message' => "New research shows that body cameras don\x{2019}t consistently lead to a reduction in the use of force by police\x{2014}nor does their use discourage officers from taking action.",
+          'caption' => 'wsj.com',
+          'id' => '8304333127_10154985901738128',
+          'link' => 'http://on.wsj.com/2gliBob',
+          'name' => "Police Body Cameras Don\x{2019}t Reduce Use of Force: Study"
+        };
+
+Domain: wsj.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-length' => 1076,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+The+Wall+Street+Journal+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+Wall+Street+Journal+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+and+right-leaning+readers+were+about+equally+as+likely+to+find+this+source+credible.+%0D%0A%0D%0AOut+of+the+82%25+of+respondents+who+have+heard+of+The+Wall+Street+Journal%2C%0D%0A38%25%09trusted+the+news+source%2C%0D%0A12%25%09distrusted+the+news+source%2C+and%0D%0A49%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fon.wsj.com%2F2gliBob&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' ),
+                                        '_headers' => bless( {
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               '::std_case' => {
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:03 GMT',
+                                                               'access-control-allow-origin' => '*',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'content-length' => '42',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-debug' => 'yQoR45fHOYwn7/uhcRgchMWUv6C0J4BqLrYfbIZq2H+BHgoHlrKa4lk6mSM1kVexpYB1hKhRM9kNGYJlBlQo/w==',
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2700879',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:03 GMT',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'x-fb-trace-id' => 'HqXjW1o5jBk',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'OK',
+                                        '_content' => '{"id":"1622501708043673_1623688151258362"}',
+                                        '_protocol' => 'HTTP/1.1'
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+HuffPost Women
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:20:04+0000',
+          'caption' => 'huffingtonpost.com',
+          'message' => 'YUM.',
+          'id' => '153213781413350_1211631218904929',
+          'link' => 'http://huff.to/2fOPbAr',
+          'name' => 'The Turkey Sandwich Of Justice Is The Leftovers Hero We Deserve'
+        };
+
+Domain: huffingtonpost.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_content' => '{"id":"1622501708043673_1623688154591695"}',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_msg' => 'OK',
+                                        '_headers' => bless( {
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:04 GMT',
+                                                               '::std_case' => {
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-debug' => 'R46OyodiKw8IwDKy5fqed1HCQsUsfaotRc/X8zwNIe+s1y5ar8sNxf0C7m0HcQuZ5H6Vpc6gLbbSPe904LYEjg==',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:04 GMT',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-trace-id' => 'GjWD2LFecri',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL'
+                                                             }, 'HTTP::Headers' ),
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'},
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1037,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+HuffPost+Women+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Huffington+Post+is+about+equally+trusted+and+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+76%25+of+respondents+who+have+heard+of+Huffington+Post%2C%0D%0A27%25%09trusted+the+news+source%2C%0D%0A27%25%09distrusted+the+news+source%2C+and%0D%0A47%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fhuff.to%2F2fOPbAr&published=true'
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+Washington Post
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:30:07+0000',
+          'id' => '6250307292_10154434693577293',
+          'caption' => 'washingtonpost.com',
+          'message' => 'Stephen K. Bannon and two Breitbart colleagues received $1.7 million in pay over four years.',
+          'link' => 'http://wapo.st/2g2SMbN',
+          'name' => 'Trump adviser received salary from charity while steering Breitbart News'
+        };
+
+Domain: washingtonpost.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'},
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+Washington+Post+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Washington+Post+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+80%25+of+respondents+who+have+heard+of+Washington+Post%2C%0D%0A34%25%09trusted+the+news+source%2C%0D%0A17%25%09distrusted+the+news+source%2C+and%0D%0A49%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fwapo.st%2F2g2SMbN&published=true',
+                                                               '_method' => 'POST',
+                                                               '_headers' => bless( {
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-length' => 1030,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' )
+                                                             }, 'HTTP::Request' ),
+                                        '_headers' => bless( {
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'content-length' => '42',
+                                                               '::std_case' => {
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:05 GMT',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-debug' => 'p6BpeAFeGAMaLu7GyH32fw9x7ZlpYP3EKXXEWDTMUcFC4kniSKrSarrQz6KFjrsAqNISV2bTfcGFWm5NVQZ4kg==',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:05 GMT',
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2700879',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'x-fb-trace-id' => 'H3VL12A01vR',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'pragma' => 'no-cache',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'OK',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688164591694"}'
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+VICE News
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:29:22+0000',
+          'name' => 'VICE News',
+          'link' => 'https://www.facebook.com/vicenews/videos/691541541005799/',
+          'message' => 'VICE Soecial Report: A House Divided debuts Dec. 9 on HBO.',
+          'id' => '235852889908002_692287364264550'
+        };
+
+BBC News
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:26:33+0000',
+          'id' => '228735667216_10154123308422217',
+          'message' => 'Watch LIVE as Chancellor Philip Hammond delivers his #AutumnStatement. Today presenter and former political editor Nick Robinson and business correspondent Joe Lynam will be adding their analysis in the comments below. #FacebookLive',
+          'link' => 'https://www.facebook.com/bbcnews/videos/10154123308422217/'
+        };
+
+Kotaku
+-----------------------------
+
+The Onion
+-----------------------------
+
+Bloomberg
+-----------------------------
+
+Fox News
+-----------------------------
+
+Opposing Views
+-----------------------------
+
+Breaking News
+-----------------------------
+
+the Business Insider
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:29:57+0000',
+          'message' => 'Donald Trump is barreling ahead on one of the signature issues that shaped him on the campaign trail.',
+          'caption' => 'businessinsider.com',
+          'id' => '20446254070_10154116627434071',
+          'name' => 'Trump\'s agenda on one of his signature campaign issues is starting to take shape',
+          'link' => 'http://read.bi/2ggxTg1'
+        };
+
+Domain: businessinsider.com
+$VAR1 = {
+          'created_time' => '2016-11-23T12:20:06+0000',
+          'name' => 'Speculation is mounting that Jony Ive is checked out at Apple',
+          'link' => 'http://read.bi/2geVeyP',
+          'caption' => 'businessinsider.com',
+          'message' => 'Rumors are circulating.',
+          'id' => '20446254070_10154116616099071'
+        };
+
+Domain: businessinsider.com
+
+CNBC
+-----------------------------
+
+CBC News
+-----------------------------
+$VAR1 = {
+          'name' => 'Lawren Harris painting could become most expensive Canadian artwork ever sold at auction',
+          'link' => 'http://www.cbc.ca/1.3862657',
+          'caption' => 'cbc.ca',
+          'id' => '5823419603_10154860617744604',
+          'message' => "\"Lawren Harris is such a powerful and attractive artist. He is someone who is ripe for appreciation abroad.\" \x{2014} Ian Dejardin, Dulwich Picture Gallery director.",
+          'created_time' => '2016-11-23T12:30:00+0000'
+        };
+
+Domain: cbc.ca
+
+BuzzFeed
+-----------------------------
+
+Wikileaks
+-----------------------------
+
+ThinkProgress
+-----------------------------
+
+MSN
+-----------------------------
+
+Glenn Beck
+-----------------------------
+
+Bloomberg Politics
+-----------------------------
+
+VICE
+-----------------------------
+
+USA TODAY
+-----------------------------
+$VAR1 = {
+          'created_time' => '2016-11-23T12:20:00+0000',
+          'caption' => 'usatoday.com',
+          'message' => 'Amazon took down a lot of negative reviews of Megyn Kelly\'s new book "Settle for More."',
+          'id' => '13652355666_10154076279765667',
+          'name' => 'Amazon strikes back against Trump trolls\' attacks on Megyn Kelly book',
+          'link' => 'http://www.usatoday.com/story/news/politics/onpolitics/2016/11/23/amazon-trump-trolls-megyn-kelly-book/94324354/'
+        };
+
+Domain: usatoday.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_headers' => bless( {
+                                                               'x-fb-debug' => 'EFElfIwLCnQMsISzqv0ygvQO2BvhddsQlh8dCOHrWNwHvE2TNGoy/S1yftTbnsM25yMcpJapHR5M60SQuBm50w==',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-response-num' => 1,
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:06 GMT',
+                                                               '::std_case' => {
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'content-length' => '42',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'x-fb-trace-id' => 'EzhHy+aiQOV',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'x-fb-rev' => '2700879',
+                                                               'connection' => 'close',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:05 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'OK',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1623688177925026"}',
+                                        '_rc' => '200',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+USA+TODAY+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+USA+Today+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+and+right-leaning+readers+were+about+equally+as+likely+to+find+this+source+credible.+%0D%0A%0D%0AOut+of+the+90%25+of+respondents+who+have+heard+of+USA+Today%2C%0D%0A37%25%09trusted+the+news+source%2C%0D%0A14%25%09distrusted+the+news+source%2C+and%0D%0A49%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fwww.usatoday.com%2Fstory%2Fnews%2Fpolitics%2Fonpolitics%2F2016%2F11%2F23%2Famazon-trump-trolls-megyn-kelly-book%2F94324354%2F&published=true',
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'content-length' => 1139,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri' => $VAR1->{'response'}{'_request'}{'_uri_canonical'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+PBS News Hour
+-----------------------------
+
+The Guardian
+-----------------------------
+$VAR1 = {
+          'message' => "\"When it comes to our relationship with the EU, what does The Labour Party want? Will it hold the government to account? And does it have anything to say to the millions of people \x{2013} including all those younger voters \x{2013} so worried about where we are headed?\"",
+          'caption' => 'theguardian.com',
+          'id' => '10513336322_10154761635916323',
+          'name' => "On Brexit, the Labour leadership offers anxious voters \x{2026} nothing",
+          'link' => 'https://www.theguardian.com/commentisfree/2016/nov/23/eu-brexit-labour-leadership-article-50?CMP=fb_gu',
+          'created_time' => '2016-11-23T12:20:01+0000'
+        };
+
+Domain: theguardian.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_request' => bless( {
+                                                               '_headers' => bless( {
+                                                                                      'content-length' => 1113,
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      },
+                                                                                      'user-agent' => 'libwww-perl/6.15'
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_content' => 'access_token=EAAPvBQ5tbjMBAFDcZBq8Vv47JY0ZB7OjsxAcZBThXKr9YQzxoupQ6qmkFOW5M5M6ZC9ry5RyLQC2ttdyhRjEpt37J9eJhuNVKjzTaQfKoqib3bQ1Uvs0cV0hUsrEoIK1T6XOiAZCXbA0f89Hia6ssjgYC3Y8RHzgZD&message=The+Facebook+page+of+The+Guardian+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+Guardian+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+36%25+of+respondents+who+have+heard+of+The+Guardian%2C%0D%0A20%25%09trusted+the+news+source%2C%0D%0A12%25%09distrusted+the+news+source%2C+and%0D%0A67%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=https%3A%2F%2Fwww.theguardian.com%2Fcommentisfree%2F2016%2Fnov%2F23%2Feu-brexit-labour-leadership-article-50%3FCMP%3Dfb_gu&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' ),
+                                        '_rc' => '200',
+                                        '_msg' => 'OK',
+                                        '_content' => '{"id":"1622501708043673_1623688184591692"}',
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_headers' => bless( {
+                                                               'x-fb-debug' => 'ZDkLLMUZmO+836lr7CAMu7sIf+DmHl0+gleSUdfo9LFJMeqaSTbR9j5x01nAdw9cSSJFXz4binfDLyq/YBB82Q==',
+                                                               'client-response-num' => 1,
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'access-control-allow-origin' => '*',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-date' => 'Client-Date'
+                                                                               },
+                                                               'client-date' => 'Wed, 23 Nov 2016 12:31:06 GMT',
+                                                               'content-length' => '42',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'x-fb-trace-id' => 'Hp+AThhxU5Q',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2700879',
+                                                               'date' => 'Wed, 23 Nov 2016 12:31:06 GMT'
+                                                             }, 'HTTP::Headers' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+AJ+
+-----------------------------
+
+The Other 98%
+-----------------------------
+
+
+
+
+

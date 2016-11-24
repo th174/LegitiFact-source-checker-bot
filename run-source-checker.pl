@@ -33,6 +33,7 @@ $sourcepages{"Occupy Democrats"} = ${$fb->query->find("/${$fb->fetch('/OccupyDem
 $sourcepages{"The Huffington Post"} = ${$fb->query->find("/${$fb->fetch('/HuffingtonPost')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"HuffPost Politics"} = ${$fb->query->find("/${$fb->fetch('/HuffPostPolitics')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"HuffPost Women"} = ${$fb->query->find("/${$fb->fetch('/HuffPostWomen')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"HuffPost Good News"} = ${$fb->query->find("/${$fb->fetch('/HuffPostGoodNews')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"The Wall Street Journal"} = ${$fb->query->find("/${$fb->fetch('/wsj')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"Upworthy"} = ${$fb->query->find("/${$fb->fetch('/Upworthy')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"The Young Turks"} = ${$fb->query->find("/${$fb->fetch('/TheYoungTurks')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
@@ -101,6 +102,7 @@ $sourcepages{"The Onion"} = ${$fb->query->find("/${$fb->fetch('/theonion')}{id}/
 $sourcepages{"Wikileaks"} = ${$fb->query->find("/${$fb->fetch('/wikileaks')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"Al Jazeera"} = ${$fb->query->find("/${$fb->fetch('/aljazeera')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"The New Yorker"} = ${$fb->query->find("/${$fb->fetch('/newyorker')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
+$sourcepages{"Kotaku"} = ${$fb->query->find("/${$fb->fetch('/kotaku')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 
 
 
@@ -136,6 +138,10 @@ foreach my $source (keys %sourcepages){
         if ($caption && $caption =~ /^(http(s)?:\/\/)?(www\.)?(.*\.)?(.+\..+)$/){
             my $domain = $5;
             print "\nDomain: $domain\n";
+            if ($domain =~ /politi.co/ || $domain =~ /politico/){
+                $domain = "politico.com";
+                print "\nAlias: $domain\n";
+            }
             if ($websites{$domain}){
                 my $message = "The Facebook page of $source originally shared this article. According to data gathered by the Pew Research Center, $websites{$domain}{source_name} is $websites{$domain}{credibility} by survey respondents who have heard of the source. ";
                 if ($websites{$domain}{popularity}){
@@ -148,7 +154,8 @@ foreach my $source (keys %sourcepages){
                 } elsif($websites{$domain}{bias}=~/Right/){
                     $message = $message."\nAdditionally, the research indicates that right-leaning readers were more likely to find this source credible than other readers. ";
                 }
-                $message = $message."\nOut of the ${100-$websites{$domain}{unheard}}% of respondents who have heard of $websites{$domain}{source_name},\n$websites{$domain}{trusted}\ttrusted the news source,\n$websites{$domain}{distrusted}\tdistrusted the news source, and\n$websites{$domain}{unheard}\tneither trusted nor distrusted the news source.";
+                my $temp = 100-$websites{$domain}{unheard};
+                $message = $message."\n\nOut of the $temp% of respondents who have heard of $websites{$domain}{source_name},\n$websites{$domain}{trusted}%\ttrusted the news source,\n$websites{$domain}{distrusted}%\tdistrusted the news source, and\n$websites{$domain}{neither}%\tneither trusted nor distrusted the news source.";
                 $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
                 print Dumper $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish;
             }
