@@ -1,0 +1,997 @@
+***********************************************************************************
+Started at 02:10:01 on 10/24/2016
+***********************************************************************************
+Querying souces from the past 10 minutes....
+
+Al Jazeera
+-----------------------------
+
+Upworthy
+-----------------------------
+
+The Huffington Post
+-----------------------------
+$VAR1 = {
+          'link' => 'http://huff.to/2fGUhf0',
+          'caption' => 'huffingtonpost.com',
+          'created_time' => '2016-11-24T07:00:20+0000',
+          'name' => 'This Clip Of Sarah Palin Totally Botching A Turkey Pardon Will Make Your Thanksgiving',
+          'id' => '18468761129_10154442018471130',
+          'message' => 'Truly, this never gets old. Happy Thanksgiving.'
+        };
+
+Domain: huffingtonpost.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"Gi\\/ztztlMeP"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:28 GMT',
+                                                               'x-fb-debug' => 'M2XHkdm2yKQmZ2hfSqiWCAW000+qboevZ484//rsk3ZBVRg22FKtnTqAxiojcPhv+dsJ9xiAIl79nDfSi6KJCQ==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:28 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'Gi/ztztlMeP',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+The+Huffington+Post+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Huffington+Post+is+about+equally+trusted+and+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+76%25+of+respondents+who+have+heard+of+Huffington+Post%2C%0D%0A27%25%09trusted+the+news+source%2C%0D%0A27%25%09distrusted+the+news+source%2C+and%0D%0A47%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fhuff.to%2F2fGUhf0&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1042,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+HuffPost Women
+-----------------------------
+
+PBS News Hour
+-----------------------------
+
+ATTN:
+-----------------------------
+
+Reuters
+-----------------------------
+$VAR1 = {
+          'link' => 'http://reut.rs/2gjE96V',
+          'caption' => 'www.reuters.com',
+          'created_time' => '2016-11-24T07:05:10+0000',
+          'name' => 'Oil prices static on uncertainty over planned production cut',
+          'id' => '114050161948682_1298493463504340',
+          'message' => 'Oil prices were little changed on Thursday as uncertainty ahead of a planned OPEC-led crude production cut and thin liquidity due to the U.S. Thanksgiving holiday kept traders from making big new bets on markets.'
+        };
+
+Domain: reuters.com
+
+NowThis
+-----------------------------
+
+Daily Caller
+-----------------------------
+
+CNBC
+-----------------------------
+
+The Onion
+-----------------------------
+
+Opposing Views
+-----------------------------
+
+the Today Show
+-----------------------------
+
+Kotaku
+-----------------------------
+
+Washington Post
+-----------------------------
+
+the American Center for Law and Justice
+-----------------------------
+
+VICE News
+-----------------------------
+
+PBS
+-----------------------------
+
+Mother Jones
+-----------------------------
+
+HuffPost Good News
+-----------------------------
+
+BBC News
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/bbcnews/photos/a.10150618575207217.382392.228735667216/10154126263077217/?type=3',
+          'created_time' => '2016-11-24T07:01:22+0000',
+          'name' => 'Photos from BBC News\'s post',
+          'id' => '228735667216_10154126264467217',
+          'message' => "Snow (Hey Oh) \x{2744}\x{2603}\x{1f328}\x{1f1ef}\x{1f1f5}
+
+Check out Tokyo: bbc.in/2fqPtK4"
+        };
+
+Breaking News
+-----------------------------
+
+The Verge
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/circuitbreaker/videos/1636602033299286/',
+          'created_time' => '2016-11-24T07:03:00+0000',
+          'name' => 'Circuit Breaker',
+          'id' => '193742123995472_1255699011133106',
+          'message' => 'This oven will recommend cookies based on your lifestyle.'
+        };
+
+New York Magazine
+-----------------------------
+
+TIME
+-----------------------------
+$VAR1 = {
+          'link' => 'http://ti.me/2gohuGU',
+          'caption' => 'time.com',
+          'created_time' => '2016-11-24T07:00:30+0000',
+          'name' => 'Here Are TIME\'s Most Anticipated Movies of Fall 2016',
+          'id' => '10606591490_10154193153866491',
+          'message' => 'This fall boasts more than a few reasons to return to the theater.'
+        };
+
+Domain: time.com
+
+the Business Insider
+-----------------------------
+
+ThinkProgress
+-----------------------------
+
+POLITICO
+-----------------------------
+$VAR1 = {
+          'link' => 'http://politi.co/2ghZp9E',
+          'caption' => 'politi.co',
+          'created_time' => '2016-11-24T07:00:29+0000',
+          'name' => 'Poll: Voters take a dim view of Trump\'s campaign promises',
+          'id' => '62317591679_10154027092961680',
+          'message' => 'Sixty-four percent of respondents said abortion should be legal in either all or most cases.'
+        };
+
+Domain: politi.co
+
+Alias: politico.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"AgOUGIk5YXA"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:28 GMT',
+                                                               'x-fb-debug' => 'K06K+vHpzRhoabgZH+MwlQ82LQlD3Zoaa0feFq1cVwOfTomcB4T4REoOLszfcUeZm4X3p5rnwsRdZ0krnJ8iXA==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:28 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'AgOUGIk5YXA',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+POLITICO+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+POLITICO+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+32%25+of+respondents+who+have+heard+of+POLITICO%2C%0D%0A21%25%09trusted+the+news+source%2C%0D%0A16%25%09distrusted+the+news+source%2C+and%0D%0A63%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fpoliti.co%2F2ghZp9E&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 983,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+USA TODAY
+-----------------------------
+
+American News
+-----------------------------
+
+ABC News
+-----------------------------
+
+HuffPost Politics
+-----------------------------
+$VAR1 = {
+          'link' => 'http://huff.to/2fGQ4rU',
+          'caption' => 'huffingtonpost.com',
+          'created_time' => '2016-11-24T07:00:19+0000',
+          'name' => 'In Trump\'s America, Comedy Clubs Are Becoming Less And Less Funny',
+          'id' => '56845382910_10154535023292911',
+          'message' => "\x{201c}I think that this moment of Donald Trump has resulted in a few people feeling more license to shout out crude remarks and behave crudely.\x{201d}"
+        };
+
+Domain: huffingtonpost.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"F2kQVmfSiMi"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:28 GMT',
+                                                               'x-fb-debug' => '1ld0R0onwQCUUig5dscjpAoi7KbIXLJcYK9S5B2nuu54AVElGZcWj/rnNK1E+nbhrAMFf+T7QjWwk2aKuubjWA==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:28 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'F2kQVmfSiMi',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+HuffPost+Politics+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Huffington+Post+is+about+equally+trusted+and+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+76%25+of+respondents+who+have+heard+of+Huffington+Post%2C%0D%0A27%25%09trusted+the+news+source%2C%0D%0A27%25%09distrusted+the+news+source%2C+and%0D%0A47%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fhuff.to%2F2fGQ4rU&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1040,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+NBC News
+-----------------------------
+$VAR1 = {
+          'link' => 'http://nbcnews.to/2gCEfa7',
+          'caption' => 'nbcnews.com',
+          'created_time' => '2016-11-24T07:00:24+0000',
+          'name' => 'This is the algorithm that determines the price of your plane tickets',
+          'id' => '155869377766434_1581173758569315',
+          'message' => 'Here\'s what it takes into account.
+via NBC News MACH'
+        };
+
+Domain: nbcnews.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"A30og42fXGB"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:29 GMT',
+                                                               'x-fb-debug' => 'FrwDZCVhu2Ibh2l3e53+8crE4nXoUFRwFFxczxAInJEdIvEdr6HpNvIl809eDfarQsqJJ+BDiu+YADYfH2a2mA==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:29 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'A30og42fXGB',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+NBC+News+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+NBC+News+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+94%25+of+respondents+who+have+heard+of+NBC+News%2C%0D%0A53%25%09trusted+the+news+source%2C%0D%0A20%25%09distrusted+the+news+source%2C+and%0D%0A26%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fnbcnews.to%2F2gCEfa7&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1012,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+AJ+
+-----------------------------
+
+Wikileaks
+-----------------------------
+
+CNNMoney
+-----------------------------
+$VAR1 = {
+          'link' => 'http://cnnmon.ie/2fJxja4',
+          'caption' => 'money.cnn.com',
+          'created_time' => '2016-11-24T07:05:01+0000',
+          'name' => 'Self-improvement in the tech age: It starts with opening an app',
+          'id' => '6651543066_10154121371618067',
+          'message' => 'Therapy, life coaches, meditation, self-help books: They\'re expensive, often overwhelming and still have stigmas attached. Mindsail wants to remove those barriers. http://cnnmon.ie/2fJxja4 Via CNNTech'
+        };
+
+Domain: cnn.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"EW3XcgHzISn"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:29 GMT',
+                                                               'x-fb-debug' => 'P/JIMUZKh8CPJiVHDTjqley7BiL2bK6FK0LvVJZ8sosth1CdMYzG6u7aKcwMWtt+FhXRymtbkRKMZ3WAn48fig==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:29 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'EW3XcgHzISn',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+CNNMoney+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+CNN+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+95%25+of+respondents+who+have+heard+of+CNN%2C%0D%0A57%25%09trusted+the+news+source%2C%0D%0A22%25%09distrusted+the+news+source%2C+and%0D%0A22%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fcnnmon.ie%2F2fJxja4&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1001,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+ABC News Politics
+-----------------------------
+
+Right Wing News
+-----------------------------
+
+The Wall Street Journal
+-----------------------------
+$VAR1 = {
+          'link' => 'http://on.wsj.com/2gjFWsR',
+          'caption' => 'wsj.com',
+          'created_time' => '2016-11-24T07:00:13+0000',
+          'name' => 'Colleges Pledge Support for Undocumented Immigrant Students',
+          'id' => '8304333127_10154989505198128',
+          'message' => "In recent days the presidents of more than 250 schools\x{2014}including Ivy League institutions and state flagships, as well as small religious colleges\x{2014}signed a letter expressing support for Deferred Action for Childhood Arrivals, or DACA, which allows young adults who arrived in the U.S. illegally as children to remain in the country for school or work."
+        };
+
+Domain: wsj.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"Ce69ur\\/H82b"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:29 GMT',
+                                                               'x-fb-debug' => 'C0EMuD1hy8U53b+FFH/1D6OQDvuJjQUzxxefTrgYgaF2/bUaGnW5ZdeLX4EeBzMO6n+w2OVR4SAHjHvdU8ffZw==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:30 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'Ce69ur/H82b',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+The+Wall+Street+Journal+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+Wall+Street+Journal+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+and+right-leaning+readers+were+about+equally+as+likely+to+find+this+source+credible.+%0D%0A%0D%0AOut+of+the+82%25+of+respondents+who+have+heard+of+The+Wall+Street+Journal%2C%0D%0A38%25%09trusted+the+news+source%2C%0D%0A12%25%09distrusted+the+news+source%2C+and%0D%0A49%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fon.wsj.com%2F2gjFWsR&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1076,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+MSNBC
+-----------------------------
+
+the Drudge Report
+-----------------------------
+
+Mic
+-----------------------------
+
+The Economist
+-----------------------------
+$VAR1 = {
+          'link' => 'http://econ.st/2ghAYNa',
+          'caption' => 'economist.com',
+          'created_time' => '2016-11-24T07:07:01+0000',
+          'name' => 'How to translate Shakespeare into American Sign Language',
+          'id' => '6013004059_10154803922249060',
+          'message' => 'A verbatim translation is impossible: there are far fewer signs in ASL than there are words in the English language. As such, an ASL master might interpret "to be or not to be" literally, using the signs "live" and "die". Another might sign about living and then about giving up, followed by "which?"'
+        };
+
+Domain: economist.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"AijA\\/GUIEvK"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:30 GMT',
+                                                               'x-fb-debug' => 'e9sGnf8H0e7DgGduZnMPmc55FVcgO0WmpL5r2Z39yKyJREK4iVzhHSNAghv32lJbgMo59ih8V0ix7aaiO2Ql2Q==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:30 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'AijA/GUIEvK',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+The+Economist+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+Economist+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+and+right-leaning+readers+were+about+equally+as+likely+to+find+this+source+credible.+%0D%0A%0D%0AOut+of+the+34%25+of+respondents+who+have+heard+of+The+Economist%2C%0D%0A36%25%09trusted+the+news+source%2C%0D%0A6%25%09distrusted+the+news+source%2C+and%0D%0A58%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fecon.st%2F2ghAYNa&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1014,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+Bloomberg Politics
+-----------------------------
+
+CBS News
+-----------------------------
+
+The Young Turks
+-----------------------------
+
+Occupy Democrats
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.liberalamerica.org/2016/11/23/229-year-old-sentence-well-lead-impeachment-donald-trump/',
+          'caption' => 'www.liberalamerica.org',
+          'created_time' => '2016-11-24T07:02:37+0000',
+          'name' => 'A 229-Year Old Sentence Could Well Lead To The Impeachment Of Donald Trump',
+          'id' => '346937065399354_1320668191359565',
+          'message' => 'Watch out, Trump...'
+        };
+
+Domain: liberalamerica.org
+
+CBC News
+-----------------------------
+
+Newsweek
+-----------------------------
+
+CNN International
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/cnninternational/videos/10154716266554641/',
+          'created_time' => '2016-11-24T07:00:41+0000',
+          'name' => 'E-cigarette explodes in pants',
+          'id' => '18793419640_10154716266554641',
+          'message' => 'An e-cigarette exploded in the pocket of a man in New York City, leaving severe burns on his leg, thigh and hand. http://cnn.it/2ftREj2'
+        };
+
+The New Yorker
+-----------------------------
+$VAR1 = {
+          'link' => 'http://nyer.cm/YhJKlV7',
+          'caption' => 'newyorker.com',
+          'created_time' => '2016-11-24T07:00:36+0000',
+          'name' => "Couple\x{2019}s First Dinner Party, Serves Six",
+          'id' => '9258148868_10154214915708869',
+          'message' => "In Shouts & Murmurs: In a small kitchen, mix together the half of the guests who have arrived on time despite the fact that no one is sure whether \x{201c}7:30\x{201d} means \x{201c}arrive at 7:30\x{201d} or \x{201c}arrive an hour late.\x{201d}"
+        };
+
+Domain: newyorker.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"A8zv83Im6xf"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:30 GMT',
+                                                               'x-fb-debug' => 'J4q8Cd23Dk1YhnzLc7eLgdeIummG7Xvk0EjVA6h95yrJbs69foLdgCQZfu5Yz+NKgmhq6ua/Z4mo9CCODP74Mw==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:30 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'A8zv83Im6xf',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+The+New+Yorker+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+The+New+Yorker+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+65%25+of+respondents+who+have+heard+of+The+New+Yorker%2C%0D%0A22%25%09trusted+the+news+source%2C%0D%0A15%25%09distrusted+the+news+source%2C+and%0D%0A62%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fnyer.cm%2FYhJKlV7&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1027,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+Rush Limbaugh
+-----------------------------
+
+The Independent
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.independent.co.uk/life-style/health-and-families/health-news/ice-cream-breakfast-more-intelligent-japanese-scientist-yoshihiko-koga-smarter-clever-morning-a7434091.html?cmpid=facebook-post',
+          'caption' => 'independent.co.uk',
+          'created_time' => '2016-11-24T07:01:01+0000',
+          'name' => 'Eating ice cream for breakfast makes you more smarter, scientist claims',
+          'id' => '13312631635_10154209984491636',
+          'message' => 'Who are we to argue with science?'
+        };
+
+Domain: independent.co.uk
+
+TheBlaze
+-----------------------------
+
+NPR Politics
+-----------------------------
+
+The New York Times
+-----------------------------
+
+NPR
+-----------------------------
+
+MSN
+-----------------------------
+
+CNN Politics
+-----------------------------
+
+The Daily Show
+-----------------------------
+
+Daily Kos
+-----------------------------
+
+Yahoo News
+-----------------------------
+
+The Guardian
+-----------------------------
+
+CNN
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/cnn/videos/10155646397031509/',
+          'created_time' => '2016-11-24T07:00:40+0000',
+          'name' => 'E-cigarette explodes in pants',
+          'id' => '5550296508_10155646397031509',
+          'message' => 'An e-cigarette exploded in the pocket of a man in New York City, leaving severe burns on his leg, thigh and hand. http://cnn.it/2ftUKnc'
+        };
+
+Slate.com
+-----------------------------
+$VAR1 = {
+          'link' => 'http://slate.me/2g3Djs7',
+          'caption' => 'slate.com',
+          'created_time' => '2016-11-24T07:00:35+0000',
+          'name' => "Ben Shapiro Would Like to Correct Your Definition of \x{201c}Alt-Right\x{201d}",
+          'id' => '21516776437_10154574902021438',
+          'message' => 'He also thinks you need to turn down the outrage, liberals.'
+        };
+
+Domain: slate.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"A6jeoN0w7y7"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:31 GMT',
+                                                               'x-fb-debug' => '8reYQTItw/7Tw3BfoeXP50Vnw4Uc8brhV4FVljT4zI/ytn+ys/tMnqsiYPXT/aMejeyP+0uSwR0vowjGlgX9Qw==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:31 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'A6jeoN0w7y7',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+Slate.com+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Slate+is+about+equally+trusted+and+distrusted+by+survey+respondents+who+have+heard+of+the+source.+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+21%25+of+respondents+who+have+heard+of+Slate%2C%0D%0A17%25%09trusted+the+news+source%2C%0D%0A14%25%09distrusted+the+news+source%2C+and%0D%0A68%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fslate.me%2F2g3Djs7&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 985,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+the AP
+-----------------------------
+
+Sean Hannity
+-----------------------------
+
+The Ed Schultz Show
+-----------------------------
+
+The Atlantic
+-----------------------------
+$VAR1 = {
+          'link' => 'http://theatln.tc/2gh8nDO',
+          'caption' => 'theatlantic.com',
+          'created_time' => '2016-11-24T07:09:41+0000',
+          'name' => 'How Long Can You Wait to Have a Baby?',
+          'id' => '29259828486_10154830546083487',
+          'message' => "\"In short, the 'baby panic'\x{2014}which has by no means abated since it hit me personally\x{2014}is based largely on questionable data.\"  (from 2013)"
+        };
+
+Domain: theatlantic.com
+
+Bloomberg
+-----------------------------
+$VAR1 = {
+          'link' => 'http://bloom.bg/2g6AJS3',
+          'caption' => 'bloomberg.com',
+          'created_time' => '2016-11-24T07:00:56+0000',
+          'name' => 'Solar-Panel Roads Will Be Built Across Four Continents',
+          'id' => '266790296879_10154756869446880',
+          'message' => 'Here\'s how they work.'
+        };
+
+Domain: bloomberg.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"error":{"message":"It looks like you were misusing this feature by going too fast. You\\u2019ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center.","type":"OAuthException","code":368,"error_subcode":1390008,"fbtrace_id":"DSpN8wghH\\/y"}}',
+                                        '_rc' => '400',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'no-store',
+                                                               'date' => 'Thu, 24 Nov 2016 07:10:31 GMT',
+                                                               'x-fb-debug' => 'TWuZ/zlxBs0oqmUVRO03ezewWIqQQ/CzaaMWk1rvoBQsw/JVMq3vMLXgkxudKg5Ks3zOg21qLEFXIgYmxhhSGg==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'vary' => 'Accept-Encoding',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 07:10:31 GMT',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'www-authenticate' => 'OAuth "Facebook Platform" "access_denied" "It looks like you were misusing this feature by going too fast. You’ve been blocked from using it.\\n\\nLearn more about blocks in the Help Center."',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'x-fb-trace-id' => 'DSpN8wghH/y',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'Bad Request',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAEH4AIH44sCVuFaWZBnDuQM0VMj3XZCxNnIZC56HpzohNzgBsDrLhToCHp5ViPyufs3bg2tqyZCyV6SESPo6VsJlIXVUlrdd3I7AEzDEspRpbmFAL6PSBVKsc3KJVB2jxl46UWDkM1w4ZAKVDSYIZD&message=The+Facebook+page+of+Bloomberg+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+Bloomberg+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+60%25+of+respondents+who+have+heard+of+Bloomberg%2C%0D%0A18%25%09trusted+the+news+source%2C%0D%0A13%25%09distrusted+the+news+source%2C+and%0D%0A69%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fbloom.bg%2F2g6AJS3&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1013,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+BuzzFeed
+-----------------------------
+
+Fox News
+-----------------------------
+
+VICE
+-----------------------------
+
+Glenn Beck
+-----------------------------
+
+The Other 98%
+-----------------------------
+
+
+
+
+

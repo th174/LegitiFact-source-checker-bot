@@ -1,0 +1,467 @@
+***********************************************************************************
+Started at 13:50:01 on 10/24/2016
+***********************************************************************************
+Querying souces from the past 10 minutes....
+
+Al Jazeera
+-----------------------------
+
+Upworthy
+-----------------------------
+
+The Huffington Post
+-----------------------------
+
+HuffPost Women
+-----------------------------
+
+PBS News Hour
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.pbs.org/newshour/updates/every-year-i-buy-my-family-fast-food-for-thanksgiving-dinner-and-you-should-to/',
+          'caption' => 'pbs.org',
+          'created_time' => '2016-11-24T18:44:49+0000',
+          'name' => 'Every year I buy my family fast food for Thanksgiving dinner, and you should to',
+          'id' => '6491828674_10154795193953675',
+          'message' => '"Celebrating Thanksgiving in such a nontraditional format is too much for many people. But they should get with the program."'
+        };
+
+Domain: pbs.org
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1624249197868924"}',
+                                        '_rc' => '200',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'date' => 'Thu, 24 Nov 2016 18:50:36 GMT',
+                                                               'x-fb-debug' => 'C0li1m5cruH2AcWOmfO7TRAiJr+8EnSTHdoiW2T+TznXPRAgrh33LmHLHGVtD+duLM1gIFExuitrao6DgOcp6Q==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 18:50:36 GMT',
+                                                               'x-page-usage' => '{"call_count":69,"total_cputime":24,"total_time":31}',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'content-length' => '42',
+                                                               'x-fb-trace-id' => 'DA3FsHJb1HT',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'x-page-usage' => 'X-Page-Usage',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'OK',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAKVjrrUK6uaY0aE3ShNIaIQRXuXDVKALLiwJfhSvmB5Rbn9Lm0sIZC0JhCsRHbBM3Fl2bEVwJhZCkHoNeRQ0bIGAIGlGTv9GUGKMeZCn78hzZB7HyX20anBCdY2C113Hvylv30el9AiYlM3TWfkZD&message=The+Facebook+page+of+PBS+News+Hour+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+PBS+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+88%25+of+respondents+who+have+heard+of+PBS%2C%0D%0A43%25%09trusted+the+news+source%2C%0D%0A14%25%09distrusted+the+news+source%2C+and%0D%0A43%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fwww.pbs.org%2Fnewshour%2Fupdates%2Fevery-year-i-buy-my-family-fast-food-for-thanksgiving-dinner-and-you-should-to%2F&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1102,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+ATTN:
+-----------------------------
+
+Reuters
+-----------------------------
+$VAR1 = {
+          'link' => 'http://reut.rs/2g8wuVU',
+          'caption' => 'reuters.com',
+          'created_time' => '2016-11-24T18:50:07+0000',
+          'name' => 'Vienna Zoo twin panda cubs named Fu Feng and Fu Ban at ceremony',
+          'id' => '114050161948682_1298965193457167',
+          'message' => 'Twin panda cubs born at Vienna\'s Schoenbrunn Zoo last summer were officially named Fu Feng and Fu Ban at a ceremony on Wednesday - even though they were still too small to be there themselves: http://reut.rs/2g8wuVU'
+        };
+
+Domain: reuters.com
+
+NowThis
+-----------------------------
+
+Daily Caller
+-----------------------------
+$VAR1 = {
+          'link' => 'http://trib.al/OR4wDKL',
+          'caption' => 'smokeroom.com',
+          'created_time' => '2016-11-24T18:42:53+0000',
+          'name' => 'Jennifer Lopez Steals Show At Latin Grammys In See-Through Jumper [PHOTOS]',
+          'id' => '182919686769_10153984228336770',
+          'message' => 'Jennifer Lopez wore an outrageous outfit on the red carpet.'
+        };
+
+Domain: smokeroom.com
+
+CNBC
+-----------------------------
+
+The Onion
+-----------------------------
+
+Opposing Views
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.opposingviews.com/i/society/crime/man-sexually-abuses-daughter-stepdaughter-chickens-dog-gets-unexpected-sentence-dog?cb=940414',
+          'caption' => 'opposingviews.com',
+          'created_time' => '2016-11-24T18:45:08+0000',
+          'name' => 'Man Sexually Abuses Daughter, Stepdaughter, Chickens, Dog - Gets Unexpected Sentence From Judge',
+          'id' => '34226391050_10154279547086051',
+          'message' => 'This man sexually abused his daughter, stepdaughter, dog, and chickens. When he stood in front of a judge, he thought that was it - he would be sent away for life. Nobody expected the judge to respond the way he did.'
+        };
+
+Domain: opposingviews.com
+
+the Today Show
+-----------------------------
+
+Kotaku
+-----------------------------
+
+Washington Post
+-----------------------------
+
+the American Center for Law and Justice
+-----------------------------
+
+VICE News
+-----------------------------
+
+PBS
+-----------------------------
+
+Mother Jones
+-----------------------------
+
+HuffPost Good News
+-----------------------------
+
+BBC News
+-----------------------------
+
+Breaking News
+-----------------------------
+
+The Verge
+-----------------------------
+
+New York Magazine
+-----------------------------
+$VAR1 = {
+          'link' => 'http://nym.ag/2fLqJzW',
+          'caption' => 'nymag.com',
+          'created_time' => '2016-11-24T18:48:07+0000',
+          'name' => 'Holiday Challenge: The Hard-to-Shop-Fors',
+          'id' => '14516439825_10154778063224826',
+          'message' => 'A comprehensive gift guide for everyone on your list.
+#TheStrategist #StratGifts2016'
+        };
+
+Domain: nymag.com
+
+TIME
+-----------------------------
+
+the Business Insider
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.businessinsider.com/closed-on-thanksgiving-day-2016-11',
+          'caption' => 'businessinsider.com',
+          'created_time' => '2016-11-24T18:50:00+0000',
+          'name' => 'Here are all the stores refusing to open on Thanksgiving this year',
+          'id' => '20446254070_10154117369194071',
+          'message' => 'Sorry, Costco lovers.'
+        };
+
+Domain: businessinsider.com
+$VAR1 = {
+          'link' => 'http://read.bi/2fWje9t',
+          'caption' => 'businessinsider.com',
+          'created_time' => '2016-11-24T18:40:36+0000',
+          'name' => 'Top Trump aide acknowledges grassroots furor over Mitt Romney as potential secretary of state',
+          'id' => '20446254070_10154120076914071',
+          'message' => 'Some are worried Romney might be looking out for himself.'
+        };
+
+Domain: businessinsider.com
+
+ThinkProgress
+-----------------------------
+
+POLITICO
+-----------------------------
+
+USA TODAY
+-----------------------------
+
+American News
+-----------------------------
+
+ABC News
+-----------------------------
+
+HuffPost Politics
+-----------------------------
+
+NBC News
+-----------------------------
+
+AJ+
+-----------------------------
+
+Wikileaks
+-----------------------------
+
+CNNMoney
+-----------------------------
+$VAR1 = {
+          'link' => 'http://cnnmon.ie/2fRD3ia',
+          'caption' => 'money.cnn.com',
+          'created_time' => '2016-11-24T18:50:01+0000',
+          'name' => 'The 14 coolest toys for the holiday season',
+          'id' => '6651543066_10154122558858067',
+          'message' => 'No need to make a list and check it twice when you\'ve got this handy guide. http://cnnmon.ie/2fRD3ia via CNNTech'
+        };
+
+Domain: cnn.com
+$VAR1 = bless( {
+                 'response' => bless( {
+                                        '_protocol' => 'HTTP/1.1',
+                                        '_content' => '{"id":"1622501708043673_1624249204535590"}',
+                                        '_rc' => '200',
+                                        '_headers' => bless( {
+                                                               'connection' => 'close',
+                                                               'x-fb-rev' => '2702404',
+                                                               'cache-control' => 'private, no-cache, no-store, must-revalidate',
+                                                               'date' => 'Thu, 24 Nov 2016 18:50:37 GMT',
+                                                               'x-fb-debug' => 'f6edPqJdCtwjOo34N6FSzCKg75cYXgj+6w8X9dIYYjLe/MJGSaWKJKxWRt5WBkMOWUhu+WFZY3usL+XpCc3wEA==',
+                                                               'access-control-allow-origin' => '*',
+                                                               'client-ssl-cert-issuer' => '/C=US/O=DigiCert Inc/OU=www.digicert.com/CN=DigiCert SHA2 High Assurance Server CA',
+                                                               'client-ssl-cipher' => 'ECDHE-ECDSA-AES128-GCM-SHA256',
+                                                               'client-peer' => '31.13.65.1:443',
+                                                               'facebook-api-version' => 'v2.8',
+                                                               'client-date' => 'Thu, 24 Nov 2016 18:50:37 GMT',
+                                                               'x-page-usage' => '{"call_count":69,"total_cputime":24,"total_time":31}',
+                                                               'pragma' => 'no-cache',
+                                                               'content-type' => 'text/javascript; charset=UTF-8',
+                                                               'client-ssl-socket-class' => 'IO::Socket::SSL',
+                                                               'client-response-num' => 1,
+                                                               'content-length' => '42',
+                                                               'x-fb-trace-id' => 'AMEQ1qo/5gf',
+                                                               '::std_case' => {
+                                                                                 'client-response-num' => 'Client-Response-Num',
+                                                                                 'x-fb-rev' => 'X-Fb-Rev',
+                                                                                 'x-fb-debug' => 'X-FB-Debug',
+                                                                                 'access-control-allow-origin' => 'Access-Control-Allow-Origin',
+                                                                                 'client-ssl-cert-issuer' => 'Client-SSL-Cert-Issuer',
+                                                                                 'client-ssl-cipher' => 'Client-SSL-Cipher',
+                                                                                 'client-peer' => 'Client-Peer',
+                                                                                 'facebook-api-version' => 'Facebook-Api-Version',
+                                                                                 'x-fb-trace-id' => 'X-Fb-Trace-Id',
+                                                                                 'client-date' => 'Client-Date',
+                                                                                 'x-page-usage' => 'X-Page-Usage',
+                                                                                 'client-ssl-cert-subject' => 'Client-SSL-Cert-Subject',
+                                                                                 'client-ssl-socket-class' => 'Client-SSL-Socket-Class'
+                                                                               },
+                                                               'client-ssl-cert-subject' => '/C=US/ST=CA/L=Menlo Park/O=Facebook, Inc./CN=*.facebook.com',
+                                                               'expires' => 'Sat, 01 Jan 2000 00:00:00 GMT'
+                                                             }, 'HTTP::Headers' ),
+                                        '_msg' => 'OK',
+                                        '_request' => bless( {
+                                                               '_content' => 'access_token=EAASqp8MKvc8BAKVjrrUK6uaY0aE3ShNIaIQRXuXDVKALLiwJfhSvmB5Rbn9Lm0sIZC0JhCsRHbBM3Fl2bEVwJhZCkHoNeRQ0bIGAIGlGTv9GUGKMeZCn78hzZB7HyX20anBCdY2C113Hvylv30el9AiYlM3TWfkZD&message=The+Facebook+page+of+CNNMoney+originally+shared+this+article.+According+to+data+gathered+by+the+Pew+Research+Center%2C+CNN+is+more+trusted+than+distrusted+by+survey+respondents+who+have+heard+of+the+source.+(Over+40%25+of+respondents)+%0D%0AAdditionally%2C+the+research+indicates+that+left-leaning+readers+were+more+likely+to+find+this+source+credible+than+other+readers.+%0D%0A%0D%0AOut+of+the+95%25+of+respondents+who+have+heard+of+CNN%2C%0D%0A57%25%09trusted+the+news+source%2C%0D%0A22%25%09distrusted+the+news+source%2C+and%0D%0A22%25%09neither+trusted+nor+distrusted+the+news+source.%0D%0A%0D%0ATo+learn+more+about+Pew+Research+Center\'s+study+on+Political+Polarization+%26+Media+Habits%2C+follow+this+link+to+visit+their+report.+https%3A%2F%2Fgoo.gl%2FxwVtjv&link=http%3A%2F%2Fcnnmon.ie%2F2fRD3ia&published=true',
+                                                               '_uri' => bless( do{\(my $o = 'https://graph.facebook.com/v2.2/1622501708043673/feed')}, 'URI::https' ),
+                                                               '_headers' => bless( {
+                                                                                      'user-agent' => 'libwww-perl/6.15',
+                                                                                      'content-type' => 'application/x-www-form-urlencoded',
+                                                                                      'content-length' => 1000,
+                                                                                      '::std_case' => {
+                                                                                                        'if-ssl-cert-subject' => 'If-SSL-Cert-Subject'
+                                                                                                      }
+                                                                                    }, 'HTTP::Headers' ),
+                                                               '_method' => 'POST',
+                                                               '_uri_canonical' => $VAR1->{'response'}{'_request'}{'_uri'}
+                                                             }, 'HTTP::Request' )
+                                      }, 'HTTP::Response' )
+               }, 'Facebook::Graph::Response' );
+
+ABC News Politics
+-----------------------------
+
+Right Wing News
+-----------------------------
+
+The Wall Street Journal
+-----------------------------
+
+MSNBC
+-----------------------------
+
+the Drudge Report
+-----------------------------
+
+Mic
+-----------------------------
+
+The Economist
+-----------------------------
+
+Bloomberg Politics
+-----------------------------
+
+CBS News
+-----------------------------
+
+The Young Turks
+-----------------------------
+
+Occupy Democrats
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/OccupyDemocrats/photos/a.347907068635687.81180.346937065399354/1321190477974003/?type=3',
+          'created_time' => '2016-11-24T18:41:04+0000',
+          'name' => 'Timeline Photos',
+          'id' => '346937065399354_1321190477974003',
+          'message' => 'This one says it all...'
+        };
+
+CBC News
+-----------------------------
+
+Newsweek
+-----------------------------
+
+CNN International
+-----------------------------
+
+The New Yorker
+-----------------------------
+$VAR1 = {
+          'link' => 'https://www.facebook.com/newyorker/photos/a.430906773868.229225.9258148868/10154216575513869/?type=3',
+          'created_time' => '2016-11-24T18:43:02+0000',
+          'name' => 'Timeline Photos',
+          'id' => '9258148868_10154216575513869',
+          'message' => 'A cartoon by Jack Ziegler. See more cartoons with the New Yorker Today app: http://nyer.cm/J6PkJd6'
+        };
+
+Rush Limbaugh
+-----------------------------
+
+The Independent
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.independent.co.uk/news/world/americas/donald-trump-2-briefings-attendance-since-election-classified-intelligence-daily-a7436781.html?cmpid=facebook-post',
+          'caption' => 'independent.co.uk',
+          'created_time' => '2016-11-24T18:41:02+0000',
+          'name' => 'Donald Trump is making Mike Pence go to nearly all his daily national security briefings',
+          'id' => '13312631635_10154213861696636',
+          'message' => 'In an unprecedented move'
+        };
+
+Domain: independent.co.uk
+
+TheBlaze
+-----------------------------
+
+NPR Politics
+-----------------------------
+
+The New York Times
+-----------------------------
+
+NPR
+-----------------------------
+
+MSN
+-----------------------------
+
+CNN Politics
+-----------------------------
+
+The Daily Show
+-----------------------------
+
+Daily Kos
+-----------------------------
+
+Yahoo News
+-----------------------------
+
+The Guardian
+-----------------------------
+
+CNN
+-----------------------------
+
+Slate.com
+-----------------------------
+
+the AP
+-----------------------------
+
+Sean Hannity
+-----------------------------
+
+The Ed Schultz Show
+-----------------------------
+
+The Atlantic
+-----------------------------
+
+Bloomberg
+-----------------------------
+
+BuzzFeed
+-----------------------------
+
+Fox News
+-----------------------------
+
+VICE
+-----------------------------
+$VAR1 = {
+          'link' => 'http://www.vice.com/en_ca/read/new-catholic-app-will-help-you-earn-forgiveness-for-your-tinder-gangbangs-sindr-vgtrn?utm_source=vicefbca&utm_campaign=global',
+          'caption' => 'www.vice.com',
+          'created_time' => '2016-11-24T18:45:02+0000',
+          'name' => 'New Catholic App Will Help You Earn Forgiveness for Your Tinder Gangbangs',
+          'id' => '167115176655082_1458997734133480',
+          'message' => 'The Vatican hopes \'Sindr\' will bring the youth back to church.'
+        };
+
+Domain: vice.com
+
+Glenn Beck
+-----------------------------
+
+The Other 98%
+-----------------------------
+
+
+
+
+
