@@ -155,7 +155,7 @@ foreach my $source (keys %sourcepages){
                 $message = $message."\n\nOut of the $temp% of respondents who have heard of $websites{$domain}{source_name},\n$websites{$domain}{trusted}%\ttrusted the news source,\n$websites{$domain}{distrusted}%\tdistrusted the news source, and\n$websites{$domain}{neither}%\tneither trusted nor distrusted the news source.";
                 $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
                 print Dumper $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish;
-                sleep(15);
+                sleep(30);
             }
         }
     }
