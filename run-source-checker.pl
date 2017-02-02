@@ -125,7 +125,7 @@ while(<$research>){
     }
 }
 close ($research);
-
+my $postcount = 0;
 foreach my $source (keys %sourcepages){
     print "\n$source\n-----------------------------\n";
     foreach (@{$sourcepages{$source}}) {
@@ -154,11 +154,17 @@ foreach my $source (keys %sourcepages){
                 my $temp = 100-$websites{$domain}{unheard};
                 $message = $message."\n\nOut of the $temp% of respondents who have heard of $websites{$domain}{source_name},\n$websites{$domain}{trusted}%\ttrusted the news source,\n$websites{$domain}{distrusted}%\tdistrusted the news source, and\n$websites{$domain}{neither}%\tneither trusted nor distrusted the news source.";
                 $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
-                print Dumper $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish;
-                sleep(30);
+                my $response = $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish->as_string;
+		print "Response:\n$response\n";
+		if ($response =~ /error/){
+		    print("\nFacebook ran into an error and the post was not published. Zach Muckerberg please fix. Try again in a few hours.\n\n");
+		    die;
+		}
+                $postcount++;
+		sleep(30);
             }
         }
     }
 }
 
-print "\n\n\n\n\n"
+print "\n\nTotal Posts Made:\t$postcount\n\n\n";
