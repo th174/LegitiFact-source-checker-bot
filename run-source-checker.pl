@@ -12,7 +12,7 @@ my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
 
 my $path = dirname(abs_path($0));
 
-open(LOG, "> $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec") or die "Could not open file!";
+open(LOG, "> $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec") or die "Could not open file:\n $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec";
 
 printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year+1900);
 
