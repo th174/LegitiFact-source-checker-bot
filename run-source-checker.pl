@@ -9,12 +9,14 @@ use Cwd 'abs_path';
 use File::Basename;
 
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
-
+$year += 1900;
+$mon++;
 my $path = dirname(abs_path($0));
 
-open(LOG, "> $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec") or die "Could not open file:\n $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec";
+open(LOG, "> $path/logs/$year/$mon/$mday/legitifact-log--$hour:$min:$sec") or die "Could not open file:\n $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec";
 
-printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year+1900);
+printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,
+,$mon,$mday,$year);
 
 #Authenticate with Facebook
 my $access_token = 'EAAPvBQ5tbjMBACsZBiLh45GfZBnwDGc8D7S4jAVMxPtDAl9ZC2WzIOxAeVtH3KFdeBA5ZAqB7kn2SLRYTBrASUsqFpnD2yhOZC2VfbbNMN7OACLvhEEzXjzC2nzmzrgxr7K1D5bU25QUO1B6osDSHwZCh1PslPrKJZBrSigs8kPdAZDZD';
