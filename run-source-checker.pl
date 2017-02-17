@@ -12,8 +12,8 @@ my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
 $year += 1900;
 $mon++;
 my $path = dirname(abs_path($0));
-system "mkdir -p $path/logs/$year/$mon/$mday/";
-open(LOG, sprintf("> $path/logs/%04d/%02d/%02d/legitifact-log--%02d:%02d:%02d", $year,$mon,$mday,$hour,$min,$sec) or die "Could not open file!    $!";
+system sprintf("mkdir -p $path/logs/%04d/%02d/%02d/",$year,$mon,$mday);
+open(LOG, sprintf("> $path/logs/%04d/%02d/%02d/legitifact-log--%02d:%02d:%02d", $year,$mon,$mday,$hour,$min,$sec)) or die "Could not open file!    $!";
 
 printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year);
 
