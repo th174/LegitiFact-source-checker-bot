@@ -10,7 +10,9 @@ use File::Basename;
 
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
 
-printf ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year+1900);
+open(LOG, "> logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec");
+
+printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year+1900);
 
 #Authenticate with Facebook
 my $access_token = 'EAAPvBQ5tbjMBACsZBiLh45GfZBnwDGc8D7S4jAVMxPtDAl9ZC2WzIOxAeVtH3KFdeBA5ZAqB7kn2SLRYTBrASUsqFpnD2yhOZC2VfbbNMN7OACLvhEEzXjzC2nzmzrgxr7K1D5bU25QUO1B6osDSHwZCh1PslPrKJZBrSigs8kPdAZDZD';
@@ -24,7 +26,7 @@ my $time = $ARGV[0]; #minutes
 if (!$time){
     $time = 5;
 }
-printf "Querying souces from the past $time minutes....\n";
+printf LOG "Querying souces from the past $time minutes....\n";
 $sourcepages{"Opposing Views"} = ${$fb->query->find("/${$fb->fetch('/opposingviews')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"Occupy Democrats"} = ${$fb->query->find("/${$fb->fetch('/OccupyDemocrats')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"The Huffington Post"} = ${$fb->query->find("/${$fb->fetch('/HuffingtonPost')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
@@ -127,17 +129,17 @@ while(<$research>){
 close ($research);
 my $postcount = 0;
 foreach my $source (keys %sourcepages){
-    print "\n$source\n-----------------------------\n";
+    print LOG "\n$source\n-----------------------------\n";
     foreach (@{$sourcepages{$source}}) {
         my $url = ${$_}{link};
         my $caption = ${$_}{caption};
-        print Dumper $_;
+        print LOG Dumper $_;
         if ($caption && $caption =~ /^(http(s)?:\/\/)?(www\.)?(.*\.)?(.+\.(co.uk|com|org|eu|net|co))$/){
             my $domain = $5;
-            print "\nDomain: $domain\n";
+            print LOG "\nDomain: $domain\n";
             if ($domain =~ /politi.co/ || $domain =~ /politico/){
                 $domain = "politico.com";
-                print "\nAlias: $domain\n";
+                print LOG "\nAlias: $domain\n";
             }
             if ($websites{$domain}){
                 my $message = "The Facebook page of $source originally shared this article. According to data gathered by the Pew Research Center, $websites{$domain}{source_name} is $websites{$domain}{credibility} by survey respondents who have heard of the source. ";
@@ -155,9 +157,9 @@ foreach my $source (keys %sourcepages){
                 $message = $message."\n\nOut of the $temp% of respondents who have heard of $websites{$domain}{source_name},\n$websites{$domain}{trusted}%\ttrusted the news source,\n$websites{$domain}{distrusted}%\tdistrusted the news source, and\n$websites{$domain}{neither}%\tneither trusted nor distrusted the news source.";
                 $message = $message."\n\nTo learn more about Pew Research Center's study on Political Polarization & Media Habits, follow this link to visit their report. https://goo.gl/xwVtjv";
                 my $response = $fb->add_page_feed->set_page_id(${$page}{id})->set_message("$message")->set_link_uri("$url")->publish->as_string;
-		print "Response:\n$response\n";
+		print LOG "Response:\n$response\n";
 		if ($response =~ /error/){
-		    print("\nFacebook ran into an error and the post was not published. Zach Muckerberg please fix. Try again in a few hours.\n\n");
+		    print LOG ("\nFacebook ran into an error and the post was not published. Zach Muckerberg please fix. Try again in a few hours.\n\n");
 		    die;
 		}
                 $postcount++;
@@ -167,4 +169,4 @@ foreach my $source (keys %sourcepages){
     }
 }
 
-print "\n\nTotal Posts Made:\t$postcount\n\n\n";
+print LOG "\n\nTotal Posts Made:\t$postcount\n\n\n";
