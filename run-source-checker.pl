@@ -10,7 +10,9 @@ use File::Basename;
 
 my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) =localtime(time);
 
-open(LOG, "> logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec");
+my $path = dirname(abs_path($0));
+
+open(LOG, "> $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:sec") or die "Could not open file!";
 
 printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year+1900);
 
@@ -106,7 +108,6 @@ $sourcepages{"Kotaku"} = ${$fb->query->find("/${$fb->fetch('/kotaku')}{id}/posts
 
 
 #load info froms tsv file
-my $path = dirname(abs_path($0));
 open(my $research, "< $path/news-sites-research.tsv") or die("could not open datafile $path/../news-sites-research.tsv");
 my %websites;
 
@@ -170,3 +171,5 @@ foreach my $source (keys %sourcepages){
 }
 
 print LOG "\n\nTotal Posts Made:\t$postcount\n\n\n";
+
+close(LOG);
