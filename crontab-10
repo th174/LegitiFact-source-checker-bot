@@ -1,4 +1,5 @@
 # m h  dom mon dow   command
 */15 * * * * /usr/bin/perl /home/thuang/LegitiFact-source-checker-bot/run-source-checker.pl 15 > /home/thuang/LegitiFact-source-checker-bot/logs/run-source-checker.`date +\%Y/\%m/\%d/\%H:\%M:\%S`.log
 
+*/15 * * * * /usr/bin/bash /home/thuang/LegitiFact-source-checker-bot/git-sync.sh
 
