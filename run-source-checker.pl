@@ -13,10 +13,9 @@ $year += 1900;
 $mon++;
 my $path = dirname(abs_path($0));
 system "mkdir -p $path/logs/$year/$mon/$mday/";
-open(LOG, "> $path/logs/$year/$mon/$mday/legitifact-log--$hour:$min:$sec") or die "Could not open file:\n $path/logs/$year/$mon/$mday/legitifact-log_$hour:$min:$sec    $!";
+open(LOG, sprintf("> $path/logs/%04d/%02d/%02d/legitifact-log--%02d:%02d:%02d", $year,$mon,$mday,$hour,$min,$sec) or die "Could not open file!    $!";
 
-printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,
-,$mon,$mday,$year);
+printf LOG ("***********************************************************************************\nStarted at %02d:%02d:%02d on %02d/%02d/%04d\n***********************************************************************************\n",$hour,$min,$sec,$mon,$mday,$year);
 
 #Authenticate with Facebook
 my $access_token = 'EAAPvBQ5tbjMBACsZBiLh45GfZBnwDGc8D7S4jAVMxPtDAl9ZC2WzIOxAeVtH3KFdeBA5ZAqB7kn2SLRYTBrASUsqFpnD2yhOZC2VfbbNMN7OACLvhEEzXjzC2nzmzrgxr7K1D5bU25QUO1B6osDSHwZCh1PslPrKJZBrSigs8kPdAZDZD';
@@ -30,7 +29,7 @@ my $time = $ARGV[0]; #minutes
 if (!$time){
     $time = 5;
 }
-printf LOG "Querying souces from the past $time minutes....\n";
+print "Querying souces from the past $time minutes....\n";
 $sourcepages{"Opposing Views"} = ${$fb->query->find("/${$fb->fetch('/opposingviews')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"Occupy Democrats"} = ${$fb->query->find("/${$fb->fetch('/OccupyDemocrats')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
 $sourcepages{"The Huffington Post"} = ${$fb->query->find("/${$fb->fetch('/HuffingtonPost')}{id}/posts")->select_fields(qw(id name link message created_time caption))->where_since("-$time minutes")->request->as_hashref}{data};
@@ -130,6 +129,7 @@ while(<$research>){
     }
 }
 close ($research);
+print "Preparing Facebook Posts...\n";
 my $postcount = 0;
 foreach my $source (keys %sourcepages){
     print LOG "\n$source\n-----------------------------\n";
@@ -173,5 +173,5 @@ foreach my $source (keys %sourcepages){
 }
 
 print LOG "\n\nTotal Posts Made:\t$postcount\n\n\n";
-
+print "\nTotal Posts Made:\t$postcount\n\n";
 close(LOG);
