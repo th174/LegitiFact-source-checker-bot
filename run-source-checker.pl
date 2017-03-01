@@ -166,7 +166,7 @@ foreach my $source (keys %sourcepages){
 		    die;
 		}
                 $postcount++;
-		sleep(30);
+		sleep(40);
             }
         }
     }
